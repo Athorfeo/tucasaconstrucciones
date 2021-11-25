@@ -5,12 +5,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import logo from '../res/drawable/logo.svg';
+
 function Navigation() {
   return (
     <div>
       <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand as={Link} to="/">TUCASA | CONSTRUCCIONES</Navbar.Brand>
+        <Container className="bg-primary">
+          <Navbar.Brand as={Link} to="/"><img src={logo} className="App-logo" alt="logo" /> TUCASA | CONSTRUCCIONES</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
