@@ -1,21 +1,21 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 import './App.css';
-import Home from '../route/Home';
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+
+import Navigation from '../component/Navigation';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Navigation />
+      <div>
+        <Outlet />
+      </div>
+    </div>
   );
 }
 
