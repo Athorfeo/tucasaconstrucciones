@@ -6,14 +6,14 @@ import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import logo from '../res/drawable/logo.svg';
+import logo from '../res/drawable/logo-text-white.svg';
 
 function Navigation() {
   return (
     <div>
-      <Navbar className="bg-transparent" expand={false}>
-        <Container>
-          <Navbar.Brand as={Link} to="/"><img src={logo} width="60"height="60" className="d-inline-block align-top" alt="logo" /></Navbar.Brand>
+      <Navbar className="bg-transparent navbar-dark" expand={false}>
+        <Container className="border-bottom">
+          <Navbar.Brand as={Link} to="/"><img src={logo} width="230" height="100" className="d-inline-block align-top" alt="logo" /></Navbar.Brand>
 
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
