@@ -6,16 +6,27 @@ import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import logo from '../res/drawable/logo-text-white.svg';
+import logoWhite from '../res/drawable/logo-text-white.svg';
+import logoBlack from '../res/drawable/logo-text-black.svg';
 
-function Navigation() {
+function Navigation(props) {
+  let logo = null;
+  
+  if(props.isOnPrimary){
+    logo = logoWhite;
+  } else {
+    logo = logoBlack;
+  }
+
   return (
     <div>
       <Navbar className="bg-transparent navbar-dark" expand={false}>
         <Container className="border-bottom">
-          <Navbar.Brand as={Link} to="/"><img src={logo} width="230" height="100" className="d-inline-block align-top" alt="logo" /></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            <img src={logo} width="230" height="100" className="d-inline-block align-top" alt="logo" />
+          </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="offcanvasNavbar" />
+          <Navbar.Toggle aria-controls="offcanvasNavbar" className="border-white"/>
           <Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
 
             <Offcanvas.Header closeButton>
@@ -32,7 +43,6 @@ function Navigation() {
                 </NavDropdown>
 
                 <Nav.Link as={Link} to="about">About</Nav.Link>
-
               </Nav>
             </Offcanvas.Body>
 

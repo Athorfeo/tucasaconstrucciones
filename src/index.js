@@ -13,7 +13,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './app/App';
 
-import Home from './route/Home';
+import Home from './route/home/Home';
 import Portfolio from './route/Portfolio';
 import About from './route/About';
 
