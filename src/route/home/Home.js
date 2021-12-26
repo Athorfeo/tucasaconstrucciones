@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Navigation from '../../component/Navigation';
+import Navigation from '../../component/navigation/Navigation';
 import { BsArrowRightShort, BsInstagram, BsWhatsapp, BsGeoAlt } from "react-icons/bs";
 
 import ImgHomeHouse from '../../res/image/img-home-house.jpg';
