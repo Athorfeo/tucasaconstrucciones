@@ -39,7 +39,7 @@ function HomeFooter() {
               <BsWhatsapp className="ms-2" size={25} />
             </div>
 
-            <a href="https://www.instagram.com/tucasa_construcciones/" target="_blank" className="button-social-media p-2">
+            <a href="https://www.instagram.com/tucasa_construcciones/" target="_blank" rel="noreferrer" className="button-social-media p-2">
               @tucasa_construcciones
               <BsInstagram className="ms-2" size={25} />
             </a>

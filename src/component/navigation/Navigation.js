@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -44,23 +44,23 @@ function Navigation(props) {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link as={Link} to="/" replace className="item-navigation">
-                  <BsHouseFill className="me-2"  />
+                  <BsHouseFill className="me-2"/>
                   Inicio
                   </Nav.Link>
                 <Nav.Link as={Link} to="/portfolio" replace className="item-navigation">
-                  <BsBagFill className="me-2"  />
+                  <BsBagFill className="me-2"/>
                   Proyectos
                   </Nav.Link>
                 <Nav.Link as={Link} to="/about" replace className="item-navigation">
-                  <BsInfoSquareFill className="me-2"  />
+                  <BsInfoSquareFill className="me-2"/>
                   Nosotros
                   </Nav.Link>
               </Nav>
 
               <h4 className="text-center mt-5">Síguenos</h4>
               <div className="d-flex justify-content-center">
-                <a href="https://www.facebook.com/TUCASA-CONSTRUCCIONES-105314684770792/" target="_blank"  className="text-dark"><FiFacebook className="me-2" size={30}/></a>
-                <a href="https://www.instagram.com/tucasa_construcciones/" target="_blank"  className="text-dark"><FiInstagram className="me-2" size={30}/></a>
+                <a href="https://www.facebook.com/TUCASA-CONSTRUCCIONES-105314684770792/" target="_blank" rel="noreferrer"  className="text-dark"><FiFacebook className="me-2" size={30}/></a>
+                <a href="https://www.instagram.com/tucasa_construcciones/" target="_blank" rel="noreferrer"  className="text-dark"><FiInstagram className="me-2" size={30}/></a>
               </div>
             </Offcanvas.Body>
 
