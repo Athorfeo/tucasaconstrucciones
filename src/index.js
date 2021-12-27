@@ -14,8 +14,8 @@ import './index.css';
 import App from './app/App';
 
 import Home from './route/home/Home';
-import Portfolio from './route/Portfolio';
-import About from './route/About';
+import Portfolio from './route/portfolio/Portfolio';
+import About from './route/about/About';
 
 import reportWebVitals from './reportWebVitals';
 
