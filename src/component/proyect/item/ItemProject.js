@@ -36,7 +36,7 @@ function ItemProject(props) {
   const { t } = useTranslation();
 
   const featuresList = props.project.features.map((item) =>
-      <FeatureItemProject key={item.id} feature={{name:t(item.name), value:item.value}}></FeatureItemProject>
+      <FeatureItemProject key={item.name} feature={{name:t(item.name), value:item.value}}></FeatureItemProject>
   );
 
   return (
