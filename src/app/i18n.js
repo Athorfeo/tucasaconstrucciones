@@ -2,14 +2,17 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
 const resources = {
-  en: {
-    translation: {
-      "hello_world": "Welcome to React and react-i18next"
-    }
-  },
   es: {
     translation: {
-      "hello_world": "Welcome to React and react-i18next"
+        "last_proyect": "Gran Reserva II",
+
+        "address_value": "Calle 12 #23-12, Ocaña",
+        "phone_value": "+57 316 270 5465",
+        "instagram_value": "@tucasa_construcciones",
+
+        "slogan": "¡Construimos sueños!",
+        "see_proyects": "Ver proyectos",
+        
     }
   }
 };

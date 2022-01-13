@@ -6,13 +6,16 @@ import { BsArrowRightShort, BsInstagram, BsWhatsapp, BsGeoAlt } from "react-icon
 import './HomeFooter.css';
 import ImgHomeHouse from '../../res/image/img-home-house.jpg';
 
+import { useTranslation } from 'react-i18next';
+
 function HomeFooter() {
+  const { t } = useTranslation();
 
   return (
     <Container className="d-flex flex-column flex-md-row-reverse fixed-bottom mb-5 p-sm-0">
           <Link to="portfolio" className="d-flex align-items-center p-md-5 p-4 text-white text-decoration-none border button-see-projects">
-            <div className="flex-fill me-1 fw-bold">
-              VER PROYECTOS 
+            <div className="flex-fill me-1 fw-bold text-uppercase">
+              {t('see_proyects')}
             </div>
             <BsArrowRightShort size={40} />
           </Link>
@@ -22,7 +25,7 @@ function HomeFooter() {
             <div className="d-flex position-absolute fixed-top align-items-end h-100">
               <div className="w-100">
                 <div className="p-3">
-                  Gran Reserva II
+                  {t('last_proyect')}
                 </div>
               </div>
             </div>
@@ -30,17 +33,17 @@ function HomeFooter() {
 
           <div className="d-none d-md-flex flex-column align-items-end justify-content-around pe-3 border-end text-white">
             <div className="button-social-media p-2">
-              Calle 12 #23-12, Ocaña
+              {t('address_value')}
               <BsGeoAlt className="ms-2" size={25} />
             </div>
 
             <div className="button-social-media p-2">
-              +57 316 270 5465  
+              {t('phone_value')}
               <BsWhatsapp className="ms-2" size={25} />
             </div>
 
             <a href="https://www.instagram.com/tucasa_construcciones/" target="_blank" rel="noreferrer" className="button-social-media p-2">
-              @tucasa_construcciones
+              {t('instagram_value')}
               <BsInstagram className="ms-2" size={25} />
             </a>
           </div>

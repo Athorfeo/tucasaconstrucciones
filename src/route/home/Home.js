@@ -7,7 +7,10 @@ import Navigation from '../../component/navigation/Navigation';
 import ImgHomeHouse from '../../res/image/img-home-house.jpg';
 import HomeFooter from './HomeFooter';
 
+import { useTranslation } from 'react-i18next';
+
 function Home() {
+  const { t } = useTranslation();
 
   return (
     <div className="bg-img vh-100" style={{ backgroundImage: `url(${ImgHomeHouse})` }}>
@@ -17,7 +20,7 @@ function Home() {
           <Row>
             <Col sm={6} className="text-white mt-5">
               <div className="w-50 bg-white p-1 mb-4"></div>
-              <h1 className="display-1 fw-bold">¡Construimos sueños!</h1>
+              <h1 className="display-1 fw-bold">{t('slogan')}</h1>
               <div className="w-50 bg-white p-1 float-end mt-4"></div>
             </Col>
           </Row>
