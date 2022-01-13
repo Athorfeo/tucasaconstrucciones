@@ -4,8 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 import ImgHomeHouse from '../../res/image/img-home-house.jpg';
-import ItemProject from '../../component/ItemProject/ItemProject';
-import Footer from '../../component/Footer/Footer';
+import ItemProject from '../../component/proyect/item/ItemProject';
+import Footer from '../../component/footer/Footer';
 
 import { BsArrowDown } from "react-icons/bs";
 

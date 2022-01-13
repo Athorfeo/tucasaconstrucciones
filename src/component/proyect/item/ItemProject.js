@@ -3,8 +3,8 @@ import Col from 'react-bootstrap/Col';
 
 import './ItemProject.css';
 
-import ImgHomeHouse from '../../res/image/img-home-house.jpg';
-import FeatureItemProject from '../../component/FeatureItemProject/FeatureItemProject';
+import ImgHomeHouse from '../../../res/image/img-home-house.jpg';
+import FeatureItemProject from './feature/FeatureItemProject';
 
 function ItemProject() {
   return (
