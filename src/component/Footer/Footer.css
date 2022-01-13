@@ -1,0 +1,8 @@
+.footer{
+  background-color: var(--theme-gray-secondary);
+  color: var(--theme-white-primary);
+}
+
+.footer a{
+  color: var(--theme-white-primary);
+}

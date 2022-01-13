@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --theme-primary: #940000;
+  --theme-secondary: #C20000;
+  --theme-third: #F20000;
+  --theme-primary: #940000;
+
+  --theme-gray-primary: #666666;
+  --theme-gray-secondary: #333333;
+  --theme-gray-third: #000000;
+
+  --theme-white-primary: #FFFFFF;
+  --theme-white-secondary: #E2E2E2;
+  --theme-white-third: #B3B3B3;
+}
+
+.theme-text-primary{
+  color: var(--theme-primary);
+}

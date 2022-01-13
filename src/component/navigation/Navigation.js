@@ -27,7 +27,7 @@ function Navigation(props) {
   return (
     <div>
       <Navbar className={"bg-transparent " + theme} expand={false}>
-        <Container className="border-bottom">
+        <Container className="">
           <Navbar.Brand as={Link} to="/">
             <img src={logo} width="230" height="100" className="d-inline-block align-top" alt="logo" />
           </Navbar.Brand>
