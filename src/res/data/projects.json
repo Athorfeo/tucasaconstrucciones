@@ -1,0 +1,40 @@
+{
+    "projects":[
+       {
+          "name":"Gran Reserva II",
+          "category":"Multifamiliar",
+          "location":"Urbanización La Provenza",
+          "city":"Ocaña",
+          "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
+          "status":1,
+          "images":[
+             "",
+             ""
+          ],
+          "types":[
+             {
+                "name":"type A",
+                "totalArea":"78m",
+                "builtArea":"78m",
+                "rooms":"2",
+                "bathrooms":"2",
+                "balconies":"2",
+                "garage":"1",
+                "images":[
+                   "",
+                   ""
+                ],
+                "features":[
+                   {
+                      "title":"Descripción",
+                      "items":[
+                         "",
+                         ""
+                      ]
+                   }
+                ]
+             }
+          ]
+       }
+    ]
+ }

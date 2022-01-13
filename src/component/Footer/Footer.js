@@ -6,7 +6,6 @@ import { FiInstagram } from "react-icons/fi";
 import { GrFacebookOption } from "react-icons/gr";
 
 import './Footer.css';
-import logo from '../../res/drawable/logo.svg';
 
 import { useTranslation } from 'react-i18next';
 

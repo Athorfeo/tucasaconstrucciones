@@ -20,7 +20,9 @@ const resources = {
         "copyright_year": "© 2021 Copyright",
         "developed_by": "Desarrollador por",
         "developer_value": "@Athorfeo",
-        "connect_with_us":"Conéctate con nosotros en las redes sociales",
+        "connect_with_us": "Conéctate con nosotros en las redes sociales",
+        "scroll_down": "Desliza hacia abajo",
+        "press_for_detail": " Presiona para ir al detalle",
     }
   }
 };
