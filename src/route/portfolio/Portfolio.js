@@ -8,16 +8,19 @@ import ItemProject from '../../component/proyect/item/ItemProject';
 import Footer from '../../component/footer/Footer';
 
 import { BsArrowDown } from "react-icons/bs";
-
-import data from '../../res/data/projects.json';
-
 import { useTranslation } from 'react-i18next';
+
+import rawData from '../../res/data/projects.json';
 
 function Portfolio() {
   const { t } = useTranslation();
 
-  const loadedData = JSON.stringify(data);
-  const jsonData = JSON.parse(loadedData);
+  const loadedData = JSON.stringify(rawData);
+  const data = JSON.parse(loadedData);
+
+  const projectsList = data.projects.map((item) =>
+      <ItemProject key={item.id} project={item}></ItemProject>
+  );
 
   return (
     <div>
@@ -40,13 +43,7 @@ function Portfolio() {
 
       <Container>
           <Row>
-            <ItemProject />
-            <ItemProject />
-          </Row>
-
-          <Row>
-            <ItemProject />
-            <ItemProject />
+            {projectsList}
           </Row>
         </Container>
 

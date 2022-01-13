@@ -25,7 +25,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
         <Route index element={<Home />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="projects" element={<Portfolio />} />
           <Route path="about" element={<About />} />
           <Route
             path="*"

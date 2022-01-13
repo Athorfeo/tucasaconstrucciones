@@ -13,14 +13,14 @@ function HomeFooter() {
 
   return (
     <Container className="d-flex flex-column flex-md-row-reverse fixed-bottom mb-5 p-sm-0">
-          <Link to="portfolio" className="d-flex align-items-center p-md-5 p-4 text-white text-decoration-none border button-see-projects">
+          <Link to="projects" className="d-flex align-items-center p-md-5 p-4 text-white text-decoration-none border button-see-projects">
             <div className="flex-fill me-1 fw-bold text-uppercase">
               {t('see_proyects')}
             </div>
             <BsArrowRightShort size={40} />
           </Link>
 
-          <Link to="portfolio" className="d-none d-md-block text-white position-relative me-3 ms-3">
+          <Link to="projects" className="d-none d-md-block text-white position-relative me-3 ms-3">
             <img src={ImgHomeHouse} className="h-100" width="250" alt="ImgHomeHouse" />
             <div className="d-flex position-absolute fixed-top align-items-end h-100">
               <div className="w-100">

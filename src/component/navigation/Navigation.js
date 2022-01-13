@@ -51,7 +51,7 @@ function Navigation(props) {
                   <BsHouseFill className="me-2"/>
                   {t('home')}
                   </Nav.Link>
-                <Nav.Link as={Link} to="/portfolio" replace className="item-navigation">
+                <Nav.Link as={Link} to="/projects" replace className="item-navigation">
                   <BsBagFill className="me-2"/>
                   {t('proyects')}
                   </Nav.Link>

@@ -23,6 +23,17 @@ const resources = {
         "connect_with_us": "Conéctate con nosotros en las redes sociales",
         "scroll_down": "Desliza hacia abajo",
         "press_for_detail": " Presiona para ir al detalle",
+        "project":{
+            "status":"Estado",
+            "city":"Ciudad",
+            "sale_from": "Desde",
+            "number_apartments":"Número de apartamentos"
+        },
+        "status":{
+            "sale":"En venta",
+            "sold":"Vendido",
+            "finalized":"Entregado"
+        }
     }
   }
 };
