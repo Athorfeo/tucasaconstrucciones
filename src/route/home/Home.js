@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Navigation from '../../component/navigation/Navigation';
 
 import ImgHomeHouse from '../../res/image/img-home-house.jpg';
-import HomeFooter from './HomeFooter';
+import HomeFooter from './footer/HomeFooter';
 
 import { useTranslation } from 'react-i18next';
 
