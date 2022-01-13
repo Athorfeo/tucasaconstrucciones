@@ -12,7 +12,11 @@ import './Navigation.css';
 import logoWhite from '../../res/drawable/logo-text-white.svg';
 import logoBlack from '../../res/drawable/logo-text-black.svg';
 
+import { useTranslation } from 'react-i18next';
+
 function Navigation(props) {
+  const { t } = useTranslation();
+
   let logo = null;
   let theme = null;
   
@@ -45,19 +49,19 @@ function Navigation(props) {
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link as={Link} to="/" replace className="item-navigation">
                   <BsHouseFill className="me-2"/>
-                  Inicio
+                  {t('home')}
                   </Nav.Link>
                 <Nav.Link as={Link} to="/portfolio" replace className="item-navigation">
                   <BsBagFill className="me-2"/>
-                  Proyectos
+                  {t('proyects')}
                   </Nav.Link>
                 <Nav.Link as={Link} to="/about" replace className="item-navigation">
                   <BsInfoSquareFill className="me-2"/>
-                  Nosotros
+                  {t('about')}
                   </Nav.Link>
               </Nav>
 
-              <h4 className="text-center mt-5">Síguenos</h4>
+              <h4 className="text-center mt-5">{t('follow_us')}</h4>
               <div className="d-flex justify-content-center">
                 <a href="https://www.facebook.com/TUCASA-CONSTRUCCIONES-105314684770792/" target="_blank" rel="noreferrer"  className="text-dark"><FiFacebook className="me-2" size={30}/></a>
                 <a href="https://www.instagram.com/tucasa_construcciones/" target="_blank" rel="noreferrer"  className="text-dark"><FiInstagram className="me-2" size={30}/></a>

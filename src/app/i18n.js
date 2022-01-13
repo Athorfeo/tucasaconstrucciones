@@ -12,7 +12,10 @@ const resources = {
 
         "slogan": "¡Construimos sueños!",
         "see_proyects": "Ver proyectos",
-        
+        "home": "Inicio",
+        "proyects": "Proyectos",
+        "about": "Nosotros",
+        "follow_us": "Síguenos",
     }
   }
 };
