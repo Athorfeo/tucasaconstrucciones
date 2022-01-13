@@ -11,11 +11,16 @@ const resources = {
         "instagram_value": "@tucasa_construcciones",
 
         "slogan": "¡Construimos sueños!",
+        "sub_slogan": "Mi casa, tu casa",
         "see_proyects": "Ver proyectos",
         "home": "Inicio",
         "proyects": "Proyectos",
         "about": "Nosotros",
         "follow_us": "Síguenos",
+        "copyright_year": "© 2021 Copyright",
+        "developed_by": "Desarrollador por",
+        "developer_value": "@Athorfeo",
+        "connect_with_us":"Conéctate con nosotros en las redes sociales",
     }
   }
 };
