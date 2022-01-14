@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 import ImgHomeHouse from '../../res/image/img-home-house.jpg';
-import ItemProject from '../../component/proyect/item/ItemProject';
+import ItemProject from './item/ItemProjects';
 import Footer from '../../component/footer/Footer';
 
 import { BsArrowDown } from "react-icons/bs";
@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 
 import rawData from '../../res/data/projects.json';
 
-function Portfolio() {
+function Projects() {
   const { t } = useTranslation();
 
   const loadedData = JSON.stringify(rawData);
@@ -52,4 +52,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Projects;

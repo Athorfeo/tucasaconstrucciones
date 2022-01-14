@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import Col from 'react-bootstrap/Col';
 
-import './ItemProject.css';
+import './ItemProjects.css';
 
 import ImgHomeHouse from '../../../res/image/img-home-house.jpg';
-import FeatureItemProject from './feature/FeatureItemProject';
+import FeatureItemProjects from './feature/FeatureItemProjects';
 
 import { useTranslation } from 'react-i18next';
 
@@ -32,11 +32,11 @@ function getStatusFeature(t, status){
   return {name:t("project.status"), value:mValue}
 }
 
-function ItemProject(props) {
+function ItemProjects(props) {
   const { t } = useTranslation();
 
   const featuresList = props.project.features.map((item) =>
-      <FeatureItemProject key={item.name} feature={{name:t(item.name), value:item.value}}></FeatureItemProject>
+      <FeatureItemProjects key={item.name} feature={{name:t(item.name), value:item.value}} />
   );
 
   return (
@@ -60,7 +60,7 @@ function ItemProject(props) {
         </div>
         
         <div className="item-project-body">
-          <FeatureItemProject feature={getStatusFeature(t, props.project.status)}/>
+          <FeatureItemProjects feature={getStatusFeature(t, props.project.status)}/>
           {featuresList}
         </div>
       </Link>
@@ -68,4 +68,4 @@ function ItemProject(props) {
   );
 }
 
-export default ItemProject;
+export default ItemProjects;

@@ -14,7 +14,7 @@ import './index.css';
 import App from './app/App';
 
 import Home from './route/home/Home';
-import Portfolio from './route/portfolio/Portfolio';
+import Projects from './route/projects/Projects';
 import About from './route/about/About';
 
 import reportWebVitals from './reportWebVitals';
@@ -25,7 +25,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="projects" element={<Portfolio />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="projects/:id" element={<About />} />
           <Route path="about" element={<About />} />
           <Route
