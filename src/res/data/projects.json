@@ -8,9 +8,10 @@
             "city":"Ocaña, Norte de Santander",
             "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
             "status":1,
+            "deadline":"2022",
             "images":[
-                "",
-                ""
+                "img-home-house.jpg",
+                "img-home-house.jpg"
             ],
             "features":[
                 {

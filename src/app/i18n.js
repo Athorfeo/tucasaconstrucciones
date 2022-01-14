@@ -27,7 +27,9 @@ const resources = {
             "status":"Estado",
             "city":"Ciudad",
             "sale_from": "Desde",
-            "number_apartments":"Número de apartamentos"
+            "number_apartments":"Número de apartamentos",
+            "location":"Locación",
+            "deadline":"Año de entrega"
         },
         "status":{
             "sale":"En venta",

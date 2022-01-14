@@ -15,6 +15,7 @@ import App from './app/App';
 
 import Home from './route/home/Home';
 import Projects from './route/projects/Projects';
+import Project from './route/projects/detail/Project';
 import About from './route/about/About';
 
 import reportWebVitals from './reportWebVitals';
@@ -26,7 +27,7 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="projects/:id" element={<About />} />
+          <Route path="projects/:id" element={<Project />} />
           <Route path="about" element={<About />} />
           <Route
             path="*"
