@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Navigation from '../../component/navigation/Navigation';
 
 import ImgHomeHouse from '../../res/image/img-home-house.jpg';
-import HomeFooter from './footer/HomeFooter';
+import FooterHome from './footer/FooterHome';
 
 import { useTranslation } from 'react-i18next';
 
@@ -26,7 +26,7 @@ function Home() {
           </Row>
         </Container>
 
-      <HomeFooter />
+      <FooterHome />
     </div>
   );
 }

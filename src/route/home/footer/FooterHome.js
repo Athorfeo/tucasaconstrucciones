@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import { BsArrowRightShort, BsInstagram, BsWhatsapp, BsGeoAlt } from "react-icons/bs";
 
-import './HomeFooter.css';
+import './FooterHome.css';
 import ImgHomeHouse from '../../../res/image/img-home-house.jpg';
 
 import { useTranslation } from 'react-i18next';
