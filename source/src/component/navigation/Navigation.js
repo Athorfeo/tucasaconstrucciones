@@ -57,7 +57,7 @@ function Navigation(props) {
                   </Nav.Link>
                 <Nav.Link as={Link} to="/about" replace className="item-navigation">
                   <BsInfoSquareFill className="me-2"/>
-                  {t('about')}
+                  {t('aboutLabel')}
                   </Nav.Link>
               </Nav>
 

@@ -3,10 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 import { useTranslation } from 'react-i18next';
 
 import Navigation from '../../../component/navigation/Navigation';
 import Footer from '../../../component/footer/Footer';
+import TypeProject from './type/TypeProject';
 import rawData from '../../../res/data/projects.json';
 
 function getProject(projects, id) {
@@ -32,34 +35,40 @@ function Project() {
       </Carousel.Item>
   );
 
+  const projectTypesList = project.types.map((item) =>
+      <Tab key={item.name} eventKey={item.name} title={t('project.type') + ` ` + item.name}>
+          <TypeProject type={item} />
+      </Tab>
+  );
+
   return (
     <div>
       <Navigation isOnPrimary={false} />
 
-      <Container className="my-5">
+      <Container>
         <Row>
-          <Col className="mt-5 mb-5">
+          <Col className="">
             <h1 className="display-1 mt-5">{project.name}</h1>
             <h2 className="mt-2">{project.category}</h2>
           </Col>
         </Row>
 
 
-        <Row className="mt-5">
-          <Col className="d-flex align-items-center p-5 border-dark border-top border-end">
-            <span className="me-3">{t('project.location')}</span>
+        <Row className="d-flex mt-4 mt-md-5">
+          <Col className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
+            <span className="me-4 me-md-3">{t('project.location')}</span>
             <span className="d-flex flex-fill justify-content-end fs-5 text-end">
               {project.location}
             </span>
           </Col>
-          <Col className="d-flex align-items-center p-5 border-dark border-top border-end">
-            <span className="me-3">{t('project.deadline')}</span>
+          <Col className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
+            <span className="me-4 me-md-3">{t('project.deadline')}</span>
             <span className="d-flex flex-fill justify-content-end fs-5 text-end">
               {project.deadline}
             </span>
           </Col>
-          <Col className="d-flex align-items-center p-5 border-dark border-top">
-            <span className="me-3">{t('project.city')}</span>
+          <Col className="d-flex align-items-center p-4 p-sm-5 border-dark border-top">
+            <span className="me-4 me-sm-3">{t('project.city')}</span>
             <span className="d-flex flex-fill justify-content-end fs-5 text-end">
               {project.city}
             </span>
@@ -67,10 +76,24 @@ function Project() {
         </Row>
       </Container>
 
-      <Carousel className="mt-5">
+      <Carousel className="mt-3 mt-md-5">
         {projectImageList}
       </Carousel>
 
+      <Container>
+        <Row>
+          <Col className="">
+            <h2 className="fs-1 mt-5">{t('project.type_apartments')}</h2>
+          </Col>
+        </Row>
+
+        <Row>
+          <Tabs className="mt-2 mt-sm-5" id="uncontrolled-tab-example">
+            {projectTypesList}
+          </Tabs>
+        </Row>
+      </Container>
+      
       <Footer />
     </div>
   );

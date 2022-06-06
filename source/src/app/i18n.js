@@ -15,7 +15,7 @@ const resources = {
         "see_proyects": "Ver proyectos",
         "home": "Inicio",
         "proyects": "Proyectos",
-        "about": "Nosotros",
+        "aboutLabel": "Nosotros",
         "follow_us": "Síguenos",
         "copyright_year": "© 2021 Copyright",
         "developed_by": "Desarrollador por",
@@ -29,12 +29,30 @@ const resources = {
             "sale_from": "Desde",
             "number_apartments":"Número de apartamentos",
             "location":"Locación",
-            "deadline":"Año de entrega"
+            "deadline":"Año de entrega",
+            "type_apartments":"Tipos de apartamentos",
+            "type":"Tipo",
+            "total_area":"Área total",
+            "built_area":"Área construida",
+            "rooms":"Habitaciones",
+            "bathrooms":"Baños",
+            "balconies":"Balcones",
+            "garage_seat":"Garaje"
         },
         "status":{
-            "sale":"En venta",
-            "sold":"Vendido",
-            "finalized":"Entregado"
+          "sale":"En venta",
+          "sold":"Vendido",
+          "finalized":"Entregado"
+        },
+        "about":{
+          "title" : "Nosotros",
+          "subtitle" : "Contáctanos!",
+          "location" : "Ubicación",
+          "locationValue" : "Calle 12 #23-12, Ocaña",
+          "phone" : "Teléfono",
+          "phoneValue" : "+57 316 270 5465",
+          "email" : "Email",
+          "emailValue" : "tucasaconstrucciones@gmail.com"
         }
     }
   }
