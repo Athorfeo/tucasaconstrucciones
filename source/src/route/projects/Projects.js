@@ -3,7 +3,7 @@ import Navigation from '../../component/navigation/Navigation';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-import ImgHomeHouse from '../../res/image/img-home-house.jpg';
+import ImgProjects from '../../res/image/img-projects.jpg';
 import ItemProject from './item/ItemProjects';
 import Footer from '../../component/footer/Footer';
 
@@ -26,7 +26,7 @@ function Projects() {
     <div>
       <Navigation isOnPrimary={false} />
 
-      <div className="bg-img text-white" style={{ backgroundImage: `url(${ImgHomeHouse})` }}>
+      <div className="bg-img text-white" style={{ backgroundImage: `url(${ImgProjects})` }}>
         <Container className="pt-5 pb-5">
           <h1 className="display-1 mt-5 pt-5">{t('proyects')}</h1>
         </Container>

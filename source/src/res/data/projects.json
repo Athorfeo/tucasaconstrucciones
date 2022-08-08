@@ -1,47 +1,48 @@
 {
     "projects":[
         {
-            "id":"gran_reserva_ii",
-            "name":"Gran Reserva II",
+            "id":"piamonte",
+            "name":"Piamonte",
             "category":"Multifamiliar",
             "location":"Urbanización La Provenza",
             "city":"Ocaña, Norte de Santander",
             "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
-            "status":1,
-            "deadline":"2022",
+            "status":0,
+            "deadline":"2022 - 2023",
+            "coverImage":"piamonte/img-piamonte-001.jpg",
             "images":[
-                "img-home-house.jpg",
-                "img-home-house.jpg"
+                "piamonte/img-piamonte-001.jpg",
+                "piamonte/img-piamonte-002.jpg"
             ],
             "features":[
                 {
                     "name":"project.sale_from",
-                    "value":"$124.000.000"
+                    "value":"$179.000.000"
                 },
                 {
                     "name":"project.number_apartments",
-                    "value":"3"
+                    "value":"4"
                 }
             ],
             "types":[
                 {
-                    "name":"A",
+                    "name":"101",
                     "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
-                        "img-home-house.jpg",
-                        "img-home-house.jpg"
+                        "piamonte/img-piamonte-001.jpg",
+                        "piamonte/img-piamonte-001.jpg"
                     ],
                     "features":[
                         {
-                            "name":"project.sale_from",
-                            "value":"$124.000.000"
-                        },
-                        {
-                            "name":"project.total_area",
-                            "value":"76m"
+                            "name":"project.status",
+                            "value":"Vendida"
                         },
                         {
                             "name":"project.built_area",
+                            "value":"109.85m"
+                        },
+                        {
+                            "name":"project.free_area",
                             "value":"76m"
                         },
                         {
@@ -54,36 +55,40 @@
                         },
                         {
                             "name":"project.balconies",
-                            "value":"2"
+                            "value":"3"
                         },
                         {
                             "name":"project.garage_seat",
                             "value":"1"
                         },
                         {
-                            "name":"project.garage_seat",
-                            "value":"1"
+                            "name":"project.dining_room",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"Si"
                         }
                     ]
                 },
                 {
-                    "name":"B",
+                    "name":"102",
                     "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
-                        "img-home-house.jpg",
-                        "img-home-house.jpg"
+                        "piamonte/img-piamonte-001.jpg",
+                        "piamonte/img-piamonte-001.jpg"
                     ],
                     "features":[
                         {
-                            "name":"project.sale_from",
-                            "value":"$124.000.000"
-                        },
-                        {
-                            "name":"project.total_area",
-                            "value":"76m"
-                        },
-                        {
                             "name":"project.built_area",
+                            "value":"109.85m"
+                        },
+                        {
+                            "name":"project.free_area",
                             "value":"76m"
                         },
                         {
@@ -96,18 +101,156 @@
                         },
                         {
                             "name":"project.balconies",
-                            "value":"2"
+                            "value":"3"
                         },
                         {
                             "name":"project.garage_seat",
                             "value":"1"
                         },
                         {
+                            "name":"project.dining_room",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.price",
+                            "value":"$198.000.000"
+                        },
+                        {
+                            "name":"project.initial_price",
+                            "value":"$59.400.000"
+                        },
+                        {
+                            "name":"project.credit",
+                            "value":"$138.600.000"
+                        }
+                    ]
+                },
+                {
+                    "name":"103",
+                    "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
+                    "images":[
+                        "piamonte/img-piamonte-001.jpg",
+                        "piamonte/img-piamonte-001.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.built_area",
+                            "value":"99.3m"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"76m"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.balconies",
+                            "value":"3"
+                        },
+                        {
                             "name":"project.garage_seat",
                             "value":"1"
+                        },
+                        {
+                            "name":"project.dining_room",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.price",
+                            "value":"$179.000.000"
+                        },
+                        {
+                            "name":"project.initial_price",
+                            "value":"$53.700.000"
+                        },
+                        {
+                            "name":"project.credit",
+                            "value":"$128.300.000"
+                        }
+                    ]
+                },
+                {
+                    "name":"104",
+                    "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
+                    "images":[
+                        "piamonte/img-piamonte-001.jpg",
+                        "piamonte/img-piamonte-001.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.built_area",
+                            "value":"100.8m"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"76m"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.balconies",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.garage_seat",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.dining_room",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"Si"
+                        },
+                        {
+                            "name":"project.price",
+                            "value":"$181.000.000"
+                        },
+                        {
+                            "name":"project.initial_price",
+                            "value":"$54.400.000"
+                        },
+                        {
+                            "name":"project.credit",
+                            "value":"$126.700.000"
                         }
                     ]
                 }
+                
+                
             ]
         }
     ]

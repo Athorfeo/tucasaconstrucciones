@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 import Navigation from '../../component/navigation/Navigation';
 
-import ImgHomeHouse from '../../res/image/img-home-house.jpg';
+import ImgHome from '../../res/image/img-home.jpg';
 import FooterHome from './footer/FooterHome';
 
 import { useTranslation } from 'react-i18next';
@@ -13,7 +13,7 @@ function Home() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-img vh-100" style={{ backgroundImage: `url(${ImgHomeHouse})` }}>
+    <div className="bg-img vh-100" style={{ backgroundImage: `url(${ImgHome})` }}>
       <Navigation isOnPrimary={true} />
 
       <Container className="mt-5">

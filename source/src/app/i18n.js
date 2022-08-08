@@ -26,18 +26,25 @@ const resources = {
         "project":{
             "status":"Estado",
             "city":"Ciudad",
+            "price": "Precio",
+            "initial_price": "Cuota Inicial",
+            "credit": "Valor restante / crédito",
             "sale_from": "Desde",
             "number_apartments":"Número de apartamentos",
             "location":"Locación",
             "deadline":"Año de entrega",
-            "type_apartments":"Tipos de apartamentos",
-            "type":"Tipo",
+            "type_apartments":"Tipologías",
+            "type":"Apto",
             "total_area":"Área total",
+            "free_area":"Área libre",
             "built_area":"Área construida",
             "rooms":"Habitaciones",
             "bathrooms":"Baños",
             "balconies":"Balcones",
-            "garage_seat":"Garaje"
+            "garage_seat":"Garaje",
+            "dining_room":"Sala comedor",
+            "kitchen":"Cocina",
+            "clothes_zone":"Zona de ropas"
         },
         "status":{
           "sale":"En venta",

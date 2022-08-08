@@ -3,7 +3,7 @@ import Col from 'react-bootstrap/Col';
 
 import './ItemProjects.css';
 
-import ImgHomeHouse from '../../../res/image/img-home-house.jpg';
+import ImgHomeHouse from '../../../res/image/img-home.jpg';
 import FeatureItemProjects from './feature/FeatureItemProjects';
 
 import { useTranslation } from 'react-i18next';
@@ -44,7 +44,7 @@ function ItemProjects(props) {
       <Link to={props.project.id} className="item-project">
 
         <div className="position-relative item-project-header">
-          <img src={ImgHomeHouse} className="w-100 h-100" alt="ImgHomeHouse" />
+          <img src={require(`../../../res/image/` + props.project.coverImage).default} className="w-100 h-100" alt="ImgHomeHouse" />
 
           <div className="d-flex position-absolute fixed-top align-items-end h-100">
             <div className="w-100 p-sm-5 p-3">

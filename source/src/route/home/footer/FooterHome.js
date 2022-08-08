@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import { BsArrowRightShort, BsInstagram, BsWhatsapp, BsGeoAlt } from "react-icons/bs";
 
 import './FooterHome.css';
-import ImgHomeHouse from '../../../res/image/img-home-house.jpg';
+import ImgHome from '../../../res/image/img-home.jpg';
 
 import { useTranslation } from 'react-i18next';
 
@@ -21,7 +21,7 @@ function HomeFooter() {
           </Link>
 
           <Link to="projects" className="d-none d-md-block text-white position-relative me-3 ms-3">
-            <img src={ImgHomeHouse} className="h-100" width="250" alt="ImgHomeHouse" />
+            <img src={ImgHome} className="h-100" width="250" alt="ImgHome" />
             <div className="d-flex position-absolute fixed-top align-items-end h-100">
               <div className="w-100">
                 <div className="p-3">
