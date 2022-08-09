@@ -35,11 +35,30 @@ function Project() {
       </Carousel.Item>
   );
 
-  const projectTypesList = project.types.map((item) =>
+  //Aptos | Tipologias
+  var tipologiesSectionView = null;
+
+  if(project.types.length > 0) {
+    const tipologyListView = project.types.map((item) => 
       <Tab key={item.name} eventKey={item.name} title={t('project.type') + ` ` + item.name}>
-          <TypeProject type={item} />
+        <TypeProject type={item} />
       </Tab>
-  );
+    );
+
+    tipologiesSectionView = <Container>
+        <Row>
+          <Col className="">
+            <h2 className="fs-1 mt-5">{t('project.type_apartments')}</h2>
+          </Col>
+        </Row>
+
+        <Row>
+          <Tabs className="mt-2 mt-sm-5" id="uncontrolled-tab-example">
+            {tipologyListView}
+          </Tabs>
+        </Row>
+      </Container>;
+  }
 
   return (
     <div>
@@ -52,7 +71,6 @@ function Project() {
             <h2 className="mt-2">{project.category}</h2>
           </Col>
         </Row>
-
 
         <Row className="d-flex mt-4 mt-md-5">
           <Col className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
@@ -80,19 +98,7 @@ function Project() {
         {projectImageList}
       </Carousel>
 
-      <Container>
-        <Row>
-          <Col className="">
-            <h2 className="fs-1 mt-5">{t('project.type_apartments')}</h2>
-          </Col>
-        </Row>
-
-        <Row>
-          <Tabs className="mt-2 mt-sm-5" id="uncontrolled-tab-example">
-            {projectTypesList}
-          </Tabs>
-        </Row>
-      </Container>
+      {tipologiesSectionView}
       
       <Footer />
     </div>

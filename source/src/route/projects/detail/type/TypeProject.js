@@ -3,6 +3,8 @@ import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import { useTranslation } from 'react-i18next';
 
+import { getProjectStatusText } from '../../../../util/ProjectUtil';
+
 function sliceIntoChunks(arr, chunkSize) {
   const res = [];
   for (let i = 0; i < arr.length; i += chunkSize) {
@@ -15,43 +17,77 @@ function sliceIntoChunks(arr, chunkSize) {
 function TypeProject(props) {
   const { t } = useTranslation();
 
-  const imagesTypeList = props.type.images.map((item) =>
-      <Carousel.Item key={item}>
+  const imagesView = [];
+  const featuresView = [];
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
+  props.type.images.forEach(image => {
+    imagesView.push(
+      <Carousel.Item key={image}>
         <img 
           className="d-block w-100" 
-          src={require(`../../../../res/image/` + item).default} 
+          src={require(`../../../../res/image/` + image).default} 
           alt="One"
         />
       </Carousel.Item>
-  );
+    );
+  });
 
-  const featuresTypeList = sliceIntoChunks(props.type.features, 2).map((row) => 
-  <Row className="m">
-    <Col className="d-flex align-items-center p-4 border-dark border-top border-end">
-      <span className="me-3">{t(row[0].name)}</span>
-      <span className="d-flex flex-fill justify-content-end fs-5 text-end">
-        {t(row[0].value)}
-      </span>
-    </Col>
-    <Col className="d-flex align-items-center p-4 border-dark border-top">
-      <span className="me-3">{t(row[1].name)}</span>
-      <span className="d-flex flex-fill justify-content-end fs-5 text-end">
-        {t(row[1].value)}
-      </span>
-    </Col>
-  </Row>
-);
+  props.type.features.forEach((feature, index) => {
+    var value = '';
+
+    switch (feature.name) {
+      case 'project.status':
+        const statusText = getProjectStatusText(t, feature.value );
+
+        if(feature.value > 0){
+          value = <span className="text-danger">{statusText}</span>;
+        } else {
+          value = statusText;
+        }
+
+        break;
+    
+      default:
+        value = feature.value;
+        break;
+    }
+
+    const nameView = <span className="me-3">{t(feature.name)}</span>;
+    const valueView = <span className="d-flex flex-fill justify-content-end fs-5 text-end">
+      {value}
+    </span>;
+
+    if((index % 2) == 0){
+      featuresView.push(
+        <Col sm={6} className="d-flex align-items-center p-4 border-dark border-bottom border-end">
+          {nameView}
+          {valueView}
+        </Col>
+      );
+    } else {
+      featuresView.push(
+        <Col sm={6} className="d-flex align-items-center p-4 border-dark border-bottom">
+          {nameView}
+          {valueView}
+        </Col>
+      );
+    }
+  });
 
   return (
     <Row>
       <Col sm={6}>
         <h3 className="mt-2">{t('project.type') + ` ` + props.type.name}</h3>
         <p>{props.type.description}</p>
-        {featuresTypeList}
+        <Row>
+          {featuresView}
+        </Row>
       </Col>
       <Col sm={6}>
         <Carousel>
-          {imagesTypeList}
+          {imagesView}
         </Carousel>
       </Col>
     </Row>

@@ -252,6 +252,140 @@
                 
                 
             ]
+        },
+        {
+            "id":"gran-reserva-ii",
+            "name":"Gran Reserva II",
+            "category":"Multifamiliar",
+            "location":"Urbanización La Provenza",
+            "city":"Ocaña, Norte de Santander",
+            "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
+            "status":1,
+            "deadline":"2022",
+            "coverImage":"gran-reserva-ii/img-gran-reserva-ii-001.jpg",
+            "images":[
+                "gran-reserva-ii/img-gran-reserva-ii-001.jpg"
+            ],
+            "features":[
+                {
+                    "name":"project.number_apartments",
+                    "value":"3"
+                }
+            ],
+            "types":[
+                {
+                    "name":"101",
+                    "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!",
+                    "images":[
+                        "gran-reserva-ii/img-gran-reserva-ii-apto-101-001.jpg",
+                        "gran-reserva-ii/img-gran-reserva-ii-apto-101-002.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":1
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"87m"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.balconies",
+                            "value":"1"
+                        }
+                    ]
+                },
+                {
+                    "name":"102",
+                    "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!",
+                    "images":[
+                        "gran-reserva-ii/img-gran-reserva-ii-apto-102-001.jpg",
+                        "gran-reserva-ii/img-gran-reserva-ii-apto-102-002.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":1
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"78m"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.balconies",
+                            "value":"1"
+                        }
+                    ]
+                },
+                {
+                    "name":"103",
+                    "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!",
+                    "images":[
+                        "gran-reserva-ii/img-gran-reserva-ii-apto-103-001.jpg",
+                        "gran-reserva-ii/img-gran-reserva-ii-apto-103-002.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":1
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"92m"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.balconies",
+                            "value":"1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"gran-reserva-i",
+            "name":"Gran Reserva I",
+            "category":"Multifamiliar",
+            "location":"Urbanización La Provenza",
+            "city":"Ocaña, Norte de Santander",
+            "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
+            "status":1,
+            "deadline":"2021",
+            "coverImage":"gran-reserva-i/img-gran-reserva-i-001.jpg",
+            "images":[
+                "gran-reserva-i/img-gran-reserva-i-001.jpg"
+            ],
+            "features":[
+                {
+                    "name":"project.number_apartments",
+                    "value":"3"
+                }
+            ],
+            "types":[ 
+            ]
         }
     ]
  }

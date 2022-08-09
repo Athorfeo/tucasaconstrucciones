@@ -2,48 +2,27 @@ import { Link } from "react-router-dom";
 import Col from 'react-bootstrap/Col';
 
 import './ItemProjects.css';
-
-import ImgHomeHouse from '../../../res/image/img-home.jpg';
 import FeatureItemProjects from './feature/FeatureItemProjects';
-
+import { getProjectStatusText } from '../../../util/ProjectUtil';
 import { useTranslation } from 'react-i18next';
 
 function getStatusFeature(t, status){
-  var mValue = null;
-
-  switch (status) {
-    case 0:
-      mValue = t('status.sale');
-      break;
-
-    case 1:
-      mValue = t('status.sold');
-      break;
-
-    case 2:
-      mValue = t('status.finalized');
-      break;
-  
-    default:
-      mValue = t('status.sale');
-      break;
-  }
-
-  return {name:t("project.status"), value:mValue}
+  var mValue = getProjectStatusText(t, status);
+  return {name:t("project.status"), value: mValue, status: status};
 }
 
 function ItemProjects(props) {
   const { t } = useTranslation();
 
   const featuresList = props.project.features.map((item) =>
-      <FeatureItemProjects key={item.name} feature={{name:t(item.name), value:item.value}} />
+      <FeatureItemProjects key={item.name} feature={{name: t(item.name), value: item.value}} />
   );
 
   return (
     <Col sm={6} className="mt-5 p-0">
       <Link to={props.project.id} className="item-project">
 
-        <div className="position-relative item-project-header">
+        <div className="position-relative item-project-header ms-1">
           <img src={require(`../../../res/image/` + props.project.coverImage).default} className="w-100 h-100" alt="ImgHomeHouse" />
 
           <div className="d-flex position-absolute fixed-top align-items-end h-100">
