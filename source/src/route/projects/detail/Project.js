@@ -1,10 +1,12 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 import { useTranslation } from 'react-i18next';
 
 import Navigation from '../../../component/navigation/Navigation';
@@ -19,10 +21,10 @@ function getProject(projects, id) {
 }
 
 function Project() {
-  let { id } = useParams();
-  
-  const { t } = useTranslation();
+  window.scrollTo({top: 0, behavior: 'smooth'});
 
+  let { id } = useParams();
+  const { t } = useTranslation();
   const loadedData = JSON.stringify(rawData);
   const data = JSON.parse(loadedData);
   const project = getProject(data.projects, id);
@@ -62,6 +64,21 @@ function Project() {
       </Container>;
   }
 
+  var isSoldView = null;
+
+  if(project.status == 1) {
+    isSoldView = <Alert variant="danger" className="mt-2 mt-lg-4">
+      <Alert.Heading>El proyecto se ha vendido!</Alert.Heading>
+        <p>
+          Lastimosamente el proyecto se ha vendido completamente, pero no te procupes, tenemos más opciones para tí.
+        </p>
+        <hr />
+        <Link to="/projects" className="item-project">
+          <Button variant="danger">Ver otros proyectos</Button>{' '}
+        </Link>
+      </Alert>;
+  }
+
   return (
     <div>
       <Navigation isOnPrimary={false} />
@@ -94,6 +111,9 @@ function Project() {
             </span>
           </Col>
         </Row>
+
+        {isSoldView}
+
       </Container>
 
       <Carousel className="mt-3 mt-md-5">

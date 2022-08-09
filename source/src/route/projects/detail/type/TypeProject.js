@@ -11,8 +11,6 @@ function TypeProject(props) {
   const imagesView = [];
   const featuresView = [];
 
-  window.scrollTo({top: 0, behavior: 'smooth'});
-
   props.type.images.forEach(image => {
     imagesView.push(
       <Carousel.Item key={image}>
