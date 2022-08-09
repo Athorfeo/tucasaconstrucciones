@@ -4,7 +4,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   es: {
     translation: {
-        "last_proyect": "Gran Reserva II",
+        "last_proyect": "Piamonte",
 
         "address_value": "Calle 12 #23-12, Ocaña",
         "phone_value": "+57 316 270 5465",

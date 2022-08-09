@@ -72,7 +72,7 @@ function Project() {
           </Col>
         </Row>
 
-        <Row className="d-flex mt-4 mt-md-5">
+        <Row className="d-flex flex-sm-column flex-lg-row mt-4 mt-md-5">
           <Col className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
             <span className="me-4 me-md-3">{t('project.location')}</span>
             <span className="d-flex flex-fill justify-content-end fs-5 text-end">

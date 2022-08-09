@@ -78,14 +78,14 @@ function TypeProject(props) {
 
   return (
     <Row>
-      <Col sm={6}>
+      <Col lg={6}>
         <h3 className="mt-2">{t('project.type') + ` ` + props.type.name}</h3>
         <p>{props.type.description}</p>
         <Row>
           {featuresView}
         </Row>
       </Col>
-      <Col sm={6}>
+      <Col lg={6}>
         <Carousel>
           {imagesView}
         </Carousel>
