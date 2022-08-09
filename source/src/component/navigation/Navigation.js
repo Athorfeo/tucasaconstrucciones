@@ -14,6 +14,14 @@ import logoBlack from '../../res/drawable/logo-text-black.svg';
 
 import { useTranslation } from 'react-i18next';
 
+/**
+ * 
+ * <Nav.Link as={Link} to="/" replace className="item-navigation">
+ * <BsInfoSquareFill className="me-2"/>
+ * {t('aboutLabel')}
+ * </Nav.Link>
+ */
+
 function Navigation(props) {
   const { t } = useTranslation();
 
@@ -54,10 +62,6 @@ function Navigation(props) {
                 <Nav.Link as={Link} to="/projects" replace className="item-navigation">
                   <BsBagFill className="me-2"/>
                   {t('proyects')}
-                  </Nav.Link>
-                <Nav.Link as={Link} to="/about" replace className="item-navigation">
-                  <BsInfoSquareFill className="me-2"/>
-                  {t('aboutLabel')}
                   </Nav.Link>
               </Nav>
 
