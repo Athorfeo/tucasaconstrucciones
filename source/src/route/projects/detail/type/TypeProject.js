@@ -5,15 +5,6 @@ import { useTranslation } from 'react-i18next';
 
 import { getProjectStatusText } from '../../../../util/ProjectUtil';
 
-function sliceIntoChunks(arr, chunkSize) {
-  const res = [];
-  for (let i = 0; i < arr.length; i += chunkSize) {
-      const chunk = arr.slice(i, i + chunkSize);
-      res.push(chunk);
-  }
-  return res;
-}
-
 function TypeProject(props) {
   const { t } = useTranslation();
 

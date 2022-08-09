@@ -12,6 +12,8 @@ import Footer from '../../../component/footer/Footer';
 import TypeProject from './type/TypeProject';
 import rawData from '../../../res/data/projects.json';
 
+import './Project.css';
+
 function getProject(projects, id) {
   return projects.find(item => item.id === id);
 }
@@ -53,7 +55,7 @@ function Project() {
         </Row>
 
         <Row>
-          <Tabs className="mt-2 mt-sm-5" id="uncontrolled-tab-example">
+          <Tabs className="mt-2 mt-sm-5" id="uncontrolled-tab-example tipology-tab">
             {tipologyListView}
           </Tabs>
         </Row>

@@ -28,7 +28,7 @@ function Footer() {
         <Row>
           <div className="d-flex flex-row justify-content-center fs-6 p-3 theme-bg-white-secondary">
             {t('copyright_year')} 
-            <a href="https://www.facebook.com/TUCASA-CONSTRUCCIONES-105314684770792/" target="_blank" rel="noreferrer" className="ps-1 text-decoration-none fw-bold">
+            <a href="https://athorfeo.github.io/" target="_blank" rel="noreferrer" className="ps-1 text-decoration-none fw-bold">
               {t('developer_value')}
             </a>
           </div>
