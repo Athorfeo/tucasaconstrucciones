@@ -5,11 +5,18 @@ import { useTranslation } from 'react-i18next';
 
 import { getProjectStatusText } from '../../../../util/ProjectUtil';
 
+import './TypeProject.css';
+
 function TypeProject(props) {
   const { t } = useTranslation();
 
+  const descriptionsView = [];
   const imagesView = [];
   const featuresView = [];
+
+  props.type.descriptions.forEach(description => {
+    descriptionsView.push(<p>{description}</p>);
+  });
 
   props.type.images.forEach(image => {
     imagesView.push(
@@ -28,7 +35,7 @@ function TypeProject(props) {
 
     switch (feature.name) {
       case 'project.status':
-        const statusText = getProjectStatusText(t, feature.value );
+        var statusText = getProjectStatusText(t, feature.value );
 
         if(feature.value > 0){
           value = <span className="text-danger">{statusText}</span>;
@@ -36,6 +43,11 @@ function TypeProject(props) {
           value = statusText;
         }
 
+        break;
+      
+      case 'project.built_area':
+      case 'project.free_area':
+        value = <span>{feature.value + 'm'}<sup>2</sup></span>;
         break;
     
       default:
@@ -48,7 +60,7 @@ function TypeProject(props) {
       {value}
     </span>;
 
-    if((index % 2) == 0){
+    if((index % 2) === 0){
       featuresView.push(
         <Col sm={6} className="d-flex align-items-center p-4 border-dark border-bottom border-end">
           {nameView}
@@ -69,13 +81,13 @@ function TypeProject(props) {
     <Row>
       <Col lg={6}>
         <h3 className="mt-2">{t('project.type') + ` ` + props.type.name}</h3>
-        <p>{props.type.description}</p>
+        {descriptionsView}
         <Row>
           {featuresView}
         </Row>
       </Col>
       <Col lg={6}>
-        <Carousel>
+        <Carousel interval={null}>
           {imagesView}
         </Carousel>
       </Col>

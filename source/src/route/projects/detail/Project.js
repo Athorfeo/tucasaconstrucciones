@@ -51,8 +51,8 @@ function Project() {
 
     tipologiesSectionView = <Container>
         <Row>
-          <Col className="">
-            <h2 className="fs-1 mt-5">{t('project.type_apartments')}</h2>
+          <Col>
+            <h2 className="display-3 mt-5">{t('project.type_apartments')}</h2>
           </Col>
         </Row>
 
@@ -83,7 +83,7 @@ function Project() {
     <div>
       <Navigation isOnPrimary={false} />
 
-      <Container>
+      <Container >
         <Row>
           <Col className="">
             <h1 className="display-1 mt-5">{project.name}</h1>

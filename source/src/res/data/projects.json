@@ -27,23 +27,29 @@
             "types":[
                 {
                     "name":"101",
+                    "descriptions": [
+                        "1",
+                        "2",
+                        "3"
+                    ],
                     "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
-                        "piamonte/img-piamonte-001.jpg",
-                        "piamonte/img-piamonte-001.jpg"
+                        "piamonte/img-piamonte-101-001.jpg",
+                        "piamonte/img-piamonte-101-002.jpg",
+                        "piamonte/img-piamonte-101-003.jpg"
                     ],
                     "features":[
                         {
                             "name":"project.status",
-                            "value":"Vendida"
+                            "value":1
                         },
                         {
                             "name":"project.built_area",
-                            "value":"109.85m"
+                            "value":"114.46"
                         },
                         {
                             "name":"project.free_area",
-                            "value":"76m"
+                            "value":"90.06"
                         },
                         {
                             "name":"project.rooms",
@@ -77,19 +83,25 @@
                 },
                 {
                     "name":"102",
+                    "descriptions": [
+                        "1",
+                        "2",
+                        "3"
+                    ],
                     "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
-                        "piamonte/img-piamonte-001.jpg",
-                        "piamonte/img-piamonte-001.jpg"
+                        "piamonte/img-piamonte-102-001.jpg",
+                        "piamonte/img-piamonte-102-002.jpg",
+                        "piamonte/img-piamonte-102-003.jpg"
                     ],
                     "features":[
                         {
                             "name":"project.built_area",
-                            "value":"109.85m"
+                            "value":"109.85"
                         },
                         {
                             "name":"project.free_area",
-                            "value":"76m"
+                            "value":"76"
                         },
                         {
                             "name":"project.rooms",
@@ -135,19 +147,25 @@
                 },
                 {
                     "name":"103",
+                    "descriptions": [
+                        "1",
+                        "2",
+                        "3"
+                    ],
                     "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
-                        "piamonte/img-piamonte-001.jpg",
-                        "piamonte/img-piamonte-001.jpg"
+                        "piamonte/img-piamonte-103-001.jpg",
+                        "piamonte/img-piamonte-103-002.jpg",
+                        "piamonte/img-piamonte-103-003.jpg"
                     ],
                     "features":[
                         {
                             "name":"project.built_area",
-                            "value":"99.3m"
+                            "value":"99.36"
                         },
                         {
                             "name":"project.free_area",
-                            "value":"76m"
+                            "value":"88.97"
                         },
                         {
                             "name":"project.rooms",
@@ -193,19 +211,25 @@
                 },
                 {
                     "name":"104",
+                    "descriptions": [
+                        "1",
+                        "2",
+                        "3"
+                    ],
                     "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
-                        "piamonte/img-piamonte-001.jpg",
-                        "piamonte/img-piamonte-001.jpg"
+                        "piamonte/img-piamonte-104-001.jpg",
+                        "piamonte/img-piamonte-104-002.jpg",
+                        "piamonte/img-piamonte-104-003.jpg"
                     ],
                     "features":[
                         {
                             "name":"project.built_area",
-                            "value":"100.8m"
+                            "value":"100.84"
                         },
                         {
                             "name":"project.free_area",
-                            "value":"76m"
+                            "value":"90.06"
                         },
                         {
                             "name":"project.rooms",
@@ -275,7 +299,9 @@
             "types":[
                 {
                     "name":"101",
-                    "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!",
+                    "descriptions": [
+                        "Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!"
+                    ],
                     "images":[
                         "gran-reserva-ii/img-gran-reserva-ii-apto-101-001.jpg",
                         "gran-reserva-ii/img-gran-reserva-ii-apto-101-002.jpg"
@@ -305,7 +331,9 @@
                 },
                 {
                     "name":"102",
-                    "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!",
+                    "descriptions": [
+                        "Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!"
+                    ],
                     "images":[
                         "gran-reserva-ii/img-gran-reserva-ii-apto-102-001.jpg",
                         "gran-reserva-ii/img-gran-reserva-ii-apto-102-002.jpg"
@@ -335,7 +363,9 @@
                 },
                 {
                     "name":"103",
-                    "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!",
+                    "descriptions": [
+                        "Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades. No dejes pasar esta gran oportunidad!"
+                    ],
                     "images":[
                         "gran-reserva-ii/img-gran-reserva-ii-apto-103-001.jpg",
                         "gran-reserva-ii/img-gran-reserva-ii-apto-103-002.jpg"
