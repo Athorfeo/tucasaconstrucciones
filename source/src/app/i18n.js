@@ -25,6 +25,7 @@ const resources = {
         "press_for_detail": " Presiona para ir al detalle",
         "project":{
             "status":"Estado",
+            "description":"Descripción del proyecto",
             "city":"Ciudad",
             "price": "Precio",
             "initial_price": "Cuota Inicial",

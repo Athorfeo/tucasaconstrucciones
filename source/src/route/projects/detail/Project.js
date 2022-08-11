@@ -29,6 +29,7 @@ function Project() {
   const data = JSON.parse(loadedData);
   const project = getProject(data.projects, id);
 
+  //Project Images Section
   const projectImageList = project.images.map((item) =>
       <Carousel.Item key={item}>
         <img 
@@ -39,7 +40,31 @@ function Project() {
       </Carousel.Item>
   );
 
-  //Aptos | Tipologias
+  //Project Description Section
+  var descriptionsSectionView = null;
+  if(project.types.length > 0) {
+
+    var descriptionsView = project.descriptions.map((description) => {
+      return <p>{description}</p>;
+    });
+
+    descriptionsSectionView = (
+      <Container>
+        <Row className="mt-5">
+          <Col lg={6}>
+            <h2 className="display-3">{t('project.description')}</h2>
+          </Col>
+          <Col lg={6}>
+            {descriptionsView}
+          </Col>
+        </Row>
+
+        <hr className='mt-5'></hr>
+      </Container>
+    );
+  }
+
+  //Project Aptos | Tipologias Section
   var tipologiesSectionView = null;
 
   if(project.types.length > 0) {
@@ -119,6 +144,8 @@ function Project() {
       <Carousel className="mt-3 mt-md-5">
         {projectImageList}
       </Carousel>
+
+      {descriptionsSectionView}
 
       {tipologiesSectionView}
       
