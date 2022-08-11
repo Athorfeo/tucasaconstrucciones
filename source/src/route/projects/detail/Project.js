@@ -52,7 +52,7 @@ function Project() {
       <Container>
         <Row className="mt-5">
           <Col lg={6}>
-            <h2 className="display-3">{t('project.description')}</h2>
+            <h2 className="display-3 mb-5">{t('project.description')}</h2>
           </Col>
           <Col lg={6}>
             {descriptionsView}

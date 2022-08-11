@@ -34,7 +34,9 @@
                 {
                     "name":"101",
                     "descriptions": [
-                        "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, zona de ropas, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar y su habitación principal con closet y baño privado."],                    "images":[
+                        "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar, zona de ropas y su habitación principal con vestier y baño privado."
+                    ],
+                    "images":[
                         "piamonte/img-piamonte-101-001.jpg",
                         "piamonte/img-piamonte-101-002.jpg",
                         "piamonte/img-piamonte-101-003.jpg"
@@ -65,11 +67,8 @@
                 {
                     "name":"102",
                     "descriptions": [
-                        "1",
-                        "2",
-                        "3"
+                        "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar, zona de ropas y su habitación principal con vestier y baño privado."
                     ],
-                    "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
                         "piamonte/img-piamonte-102-001.jpg",
                         "piamonte/img-piamonte-102-002.jpg",
@@ -105,11 +104,8 @@
                 {
                     "name":"103",
                     "descriptions": [
-                        "1",
-                        "2",
-                        "3"
+                        "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar, zona de ropas y su habitación principal con closet y baño privado."
                     ],
-                    "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
                         "piamonte/img-piamonte-103-001.jpg",
                         "piamonte/img-piamonte-103-002.jpg",
@@ -145,11 +141,8 @@
                 {
                     "name":"104",
                     "descriptions": [
-                        "1",
-                        "2",
-                        "3"
+                        "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, zona de ropas, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar y su habitación principal con closet y baño privado."
                     ],
-                    "description":"This maisonette with approx. 155 m² on the 1st floor of the rear house welcomes you as you enter through a handcrafted cloakroom. The following living room with open kitchen and dining area is completely flooded with light and offers a wonderful view over the roofs of the city of Lörrach.",
                     "images":[
                         "piamonte/img-piamonte-104-001.jpg",
                         "piamonte/img-piamonte-104-002.jpg",
