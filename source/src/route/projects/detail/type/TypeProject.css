@@ -15,5 +15,16 @@
 }
 
 
+.button-typology-project:hover, .button-typology-project:focus{
+    background: var(--bs-dark) !important;
+    color: var(--bs-white) !important;
+  }
+
+.nav-tabs .nav-link, .nav-tabs .nav-link.active {
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+
 
 

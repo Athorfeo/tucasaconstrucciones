@@ -18,7 +18,20 @@ function Projects() {
   const loadedData = JSON.stringify(rawData);
   const data = JSON.parse(loadedData);
 
-  const projectsList = data.projects.map((item) =>
+  var groupBy = function(xs, key) {
+    return xs.reduce(function(rv, x) {
+      (rv[x[key]] = rv[x[key]] || []).push(x);
+      return rv;
+    }, {});
+  };
+
+  const projectsByGroup = groupBy(data.projects, 'status');
+
+  const availableProjectsView = projectsByGroup[0].map((item) =>
+      <ItemProject key={item.id} project={item}></ItemProject>
+  );
+
+  const soldProjectsView = projectsByGroup[1].map((item) =>
       <ItemProject key={item.id} project={item}></ItemProject>
   );
 
@@ -42,8 +55,13 @@ function Projects() {
       </p>
 
       <Container>
+          <h2 className="display-5">{t('available_projects')}</h2>
+          <Row className='mb-4'>
+            {availableProjectsView}
+          </Row>
+          <h2 className="mt-5 display-5">{t('sold_projects')}</h2>
           <Row>
-            {projectsList}
+            {soldProjectsView}
           </Row>
         </Container>
 

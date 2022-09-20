@@ -18,7 +18,8 @@
             "coverImage":"piamonte/img-piamonte-001.jpg",
             "images":[
                 "piamonte/img-piamonte-001.jpg",
-                "piamonte/img-piamonte-002.jpg"
+                "piamonte/img-piamonte-002.jpg",
+                "piamonte/img-piamonte-003.jpg"
             ],
             "features":[
                 {
@@ -33,13 +34,15 @@
             "types":[
                 {
                     "name":"101",
+                    "pdf":"piamonte/piamonte-101.pdf",
                     "descriptions": [
                         "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar, zona de ropas y su habitación principal con vestier y baño privado."
                     ],
                     "images":[
                         "piamonte/img-piamonte-101-001.jpg",
                         "piamonte/img-piamonte-101-002.jpg",
-                        "piamonte/img-piamonte-101-003.jpg"
+                        "piamonte/img-piamonte-101-003.jpg",
+                        "piamonte/img-piamonte-101-004.jpg"
                     ],
                     "features":[
                         {
@@ -52,7 +55,7 @@
                         },
                         {
                             "name":"project.free_area",
-                            "value":"90.06"
+                            "value":"102.86"
                         },
                         {
                             "name":"project.rooms",
@@ -66,13 +69,15 @@
                 },
                 {
                     "name":"102",
+                    "pdf":"piamonte/piamonte-102.pdf",
                     "descriptions": [
                         "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar, zona de ropas y su habitación principal con vestier y baño privado."
                     ],
                     "images":[
                         "piamonte/img-piamonte-102-001.jpg",
                         "piamonte/img-piamonte-102-002.jpg",
-                        "piamonte/img-piamonte-102-003.jpg"
+                        "piamonte/img-piamonte-102-003.jpg",
+                        "piamonte/img-piamonte-102-004.jpg"
                     ],
                     "features":[
                         {
@@ -85,7 +90,7 @@
                         },
                         {
                             "name":"project.free_area",
-                            "value":"76"
+                            "value":"98.62"
                         },
                         {
                             "name":"project.rooms",
@@ -103,18 +108,20 @@
                 },
                 {
                     "name":"103",
+                    "pdf":"piamonte/piamonte-103.pdf",
                     "descriptions": [
                         "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar, zona de ropas y su habitación principal con closet y baño privado."
                     ],
                     "images":[
                         "piamonte/img-piamonte-103-001.jpg",
                         "piamonte/img-piamonte-103-002.jpg",
-                        "piamonte/img-piamonte-103-003.jpg"
+                        "piamonte/img-piamonte-103-003.jpg",
+                        "piamonte/img-piamonte-103-004.jpg"
                     ],
                     "features":[
                         {
                             "name":"project.status",
-                            "value":0
+                            "value":1
                         },
                         {
                             "name":"project.built_area",
@@ -131,22 +138,20 @@
                         {
                             "name":"project.bathrooms",
                             "value":"3"
-                        },
-                        {
-                            "name":"project.price",
-                            "value":"$179.000.000"
                         }
                     ]
                 },
                 {
                     "name":"104",
+                    "pdf":"piamonte/piamonte-104.pdf",
                     "descriptions": [
                         "Esta tipología cuenta en su primer piso con la sala comedor, cocina tipo americana, zona de ropas, cerrando con su baño de visitas y parqueadero. En la segunda planta encontraremos dos alcobas auxiliares con closet,un baño auxiliar y su habitación principal con closet y baño privado."
                     ],
                     "images":[
                         "piamonte/img-piamonte-104-001.jpg",
                         "piamonte/img-piamonte-104-002.jpg",
-                        "piamonte/img-piamonte-104-003.jpg"
+                        "piamonte/img-piamonte-104-003.jpg",
+                        "piamonte/img-piamonte-104-004.jpg"
                     ],
                     "features":[
                         {

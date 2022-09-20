@@ -23,6 +23,8 @@ const resources = {
         "connect_with_us": "Conéctate con nosotros en las redes sociales",
         "scroll_down": "Desliza hacia abajo",
         "press_for_detail": " Presiona para ir al detalle",
+        "available_projects": "Disponibles",
+        "sold_projects": "Vendidos",
         "project":{
             "status":"Estado",
             "description":"Descripción del proyecto",
@@ -31,11 +33,11 @@ const resources = {
             "initial_price": "Cuota Inicial",
             "credit": "Valor restante / crédito",
             "sale_from": "Desde",
-            "number_apartments":"Número de apartamentos",
+            "number_apartments":"Número de viviendas",
             "location":"Locación",
             "deadline":"Año de entrega",
             "type_apartments":"Tipologías",
-            "type":"Apto",
+            "type":"Vivienda",
             "total_area":"Área total",
             "free_area":"Área libre",
             "built_area":"Área construida",
@@ -45,7 +47,9 @@ const resources = {
             "garage_seat":"Garaje",
             "dining_room":"Sala comedor",
             "kitchen":"Cocina",
-            "clothes_zone":"Zona de ropas"
+            "clothes_zone":"Zona de ropas",
+            "download_layout":"Descargar diseño (PDF)",
+            "contact":"Contáctanos"
         },
         "status":{
           "sale":"En venta",
@@ -60,7 +64,7 @@ const resources = {
           "phone" : "Teléfono",
           "phoneValue" : "+57 316 270 5465",
           "email" : "Email",
-          "emailValue" : "tucasaconstrucciones@gmail.com"
+          "emailValue" : "tucasaconstruccionessas@gmail.com"
         }
     }
   }

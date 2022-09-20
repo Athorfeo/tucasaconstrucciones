@@ -13,6 +13,7 @@ function TypeProject(props) {
   const descriptionsView = [];
   const imagesView = [];
   const featuresView = [];
+  var downloadLayoutView = null;
 
   props.type.descriptions.forEach(description => {
     descriptionsView.push(<p>{description}</p>);
@@ -29,6 +30,16 @@ function TypeProject(props) {
       </Carousel.Item>
     );
   });
+
+  if(props.type.pdf != null){
+    downloadLayoutView = (
+      <a href={require(`../../../../res/pdf/` + props.type.pdf).default} target="_blank" rel="noreferrer" className="d-flex align-items-center p-3 text-dark text-decoration-none border border-dark button-typology-project">
+        <div className="flex-fill fw-bold text-uppercase text-center">
+          {t('project.download_layout')}
+        </div>
+      </a>
+    );
+  }
 
   props.type.features.forEach((feature, index) => {
     var value = '';
@@ -80,7 +91,7 @@ function TypeProject(props) {
   return (
     <Row>
       <Col lg={5}>
-        <h3 className="mt-2">{t('project.type') + ` ` + props.type.name}</h3>
+        <h3 className="mt-4">{t('project.type') + ` ` + props.type.name}</h3>
         {descriptionsView}
         <Row>
           {featuresView}
@@ -90,6 +101,7 @@ function TypeProject(props) {
         <Carousel interval={null}>
           {imagesView}
         </Carousel>
+        {downloadLayoutView}
       </Col>
     </Row>
   );

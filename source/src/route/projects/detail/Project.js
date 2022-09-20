@@ -91,7 +91,7 @@ function Project() {
 
   var isSoldView = null;
 
-  if(project.status == 1) {
+  if(project.status === 1) {
     isSoldView = <Alert variant="danger" className="mt-2 mt-lg-4">
       <Alert.Heading>El proyecto se ha vendido!</Alert.Heading>
         <p>
@@ -117,19 +117,19 @@ function Project() {
         </Row>
 
         <Row className="d-flex flex-sm-column flex-lg-row mt-4 mt-md-5">
-          <Col className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
+          <Col lg={4} className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
             <span className="me-4 me-md-3">{t('project.location')}</span>
             <span className="d-flex flex-fill justify-content-end fs-5 text-end">
               {project.location}
             </span>
           </Col>
-          <Col className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
+          <Col lg={4} className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-end">
             <span className="me-4 me-md-3">{t('project.deadline')}</span>
             <span className="d-flex flex-fill justify-content-end fs-5 text-end">
               {project.deadline}
             </span>
           </Col>
-          <Col className="d-flex align-items-center p-4 p-sm-5 border-dark border-top">
+          <Col lg={4} className="d-flex align-items-center p-4 p-sm-5 border-dark border-top">
             <span className="me-4 me-sm-3">{t('project.city')}</span>
             <span className="d-flex flex-fill justify-content-end fs-5 text-end">
               {project.city}
@@ -148,7 +148,51 @@ function Project() {
       {descriptionsSectionView}
 
       {tipologiesSectionView}
-      
+
+      <Container fluid className='theme-bg-white-secondary mt-5'>
+        <Container className='d-flex flex-column pt-5 pb-5'>
+          <h2 className="display-5">{t('project.contact')}</h2>
+
+          <Row className="d-none d-md-flex flex-sm-column flex-lg-row mt-4 mt-md-5">
+            <Col lg={6} className="d-flex align-items-center p-4 p-md-5 border-dark border-top border-bottom border-end">
+              <span className="me-4 me-md-3">
+                {t('about.phone')}
+              </span>
+              <span className="d-flex flex-fill justify-content-end fs-5 text-end">
+              {t('about.phoneValue')}
+              </span>
+            </Col>
+            <Col lg={6} className="d-flex align-items-center p-4 p-sm-5 border-dark border-top border-bottom">
+              <span className="me-4 me-sm-3">
+                {t('about.email')}
+              </span>
+              <span className="d-flex flex-fill justify-content-end fs-5 text-end">
+              {t('about.emailValue')}
+              </span>
+            </Col>
+          </Row>
+
+          <Row className="d-flex d-md-none flex-sm-column flex-lg-row">
+            <Col lg={6} className="d-flex flex-column border-dark border-bottom p-4">
+              <span className="">
+                {t('about.phone')}
+              </span>
+              <span className="d-flex flex-fill fs-6 text-end fw-bold">
+                {t('about.phoneValue')}
+              </span>
+            </Col>
+            <Col lg={6} className="d-flex flex-column border-dark p-4">
+              <span className="">
+                {t('about.email')}
+              </span>
+              <span className="d-flex flex-fill fs-6 text-end fw-bold">
+                {t('about.emailValue')}
+              </span>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+
       <Footer />
     </div>
   );

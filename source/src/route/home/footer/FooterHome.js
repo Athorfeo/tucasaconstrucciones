@@ -20,17 +20,6 @@ function HomeFooter() {
             <BsArrowRightShort size={40} />
           </Link>
 
-          <Link to="projects" className="d-none d-md-block text-white position-relative me-3 ms-3">
-            <img src={ImgHome} className="h-100" width="250" alt="ImgHome" />
-            <div className="d-flex position-absolute fixed-top align-items-end h-100">
-              <div className="w-100">
-                <div className="p-3">
-                  {t('last_proyect')}
-                </div>
-              </div>
-            </div>
-          </Link>
-
           <div className="d-none d-md-flex flex-column align-items-end justify-content-around pe-3 border-end text-white">
             <div className="button-social-media p-2">
               {t('address_value')}
