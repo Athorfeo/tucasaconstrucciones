@@ -1,0 +1,13 @@
+.button-see-projects:hover, .button-see-projects:focus{
+  background: var(--bs-white) !important;
+  color: var(--bs-dark) !important;
+}
+
+.button-social-media{
+  color: var(--bs-white);
+  text-decoration: none;
+}
+
+.button-social-media:hover, .button-social-media:focus{
+  color: var(--bs-white);
+}

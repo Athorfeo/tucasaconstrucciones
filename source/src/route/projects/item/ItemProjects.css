@@ -1,0 +1,12 @@
+.item-project{
+  text-decoration: none !important;
+  color: var(--bs-dark);
+}
+
+.item-project-header{
+  color: var(--bs-white);
+}
+
+.item-project-body{
+  color: var(--bs-dark);
+}

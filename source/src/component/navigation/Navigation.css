@@ -1,0 +1,11 @@
+.item-navigation{
+  background: var(--bs-white) !important;
+  color: var(--bs-dark) !important;
+  border-bottom: 1px solid var(--bs-dark);
+  padding: 10px !important;
+}
+
+.item-navigation:hover, .item-navigation:focus{
+  background: var(--bs-dark) !important;
+  color: var(--bs-white) !important;
+}
