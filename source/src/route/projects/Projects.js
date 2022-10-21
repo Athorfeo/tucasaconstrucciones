@@ -12,7 +12,12 @@ import { useTranslation } from 'react-i18next';
 
 import rawData from '../../res/data/projects.json';
 
+import { getAnalytics, logEvent } from "firebase/analytics";
+
 function Projects() {
+  const analytics = getAnalytics();
+  logEvent(analytics, 'page_title', 'Projects');
+
   const { t } = useTranslation();
 
   const loadedData = JSON.stringify(rawData);

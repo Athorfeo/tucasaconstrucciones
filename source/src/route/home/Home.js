@@ -9,7 +9,12 @@ import FooterHome from './footer/FooterHome';
 
 import { useTranslation } from 'react-i18next';
 
+import { getAnalytics, logEvent } from "firebase/analytics";
+
 function Home() {
+  const analytics = getAnalytics();
+  logEvent(analytics, 'page_title', 'Home');
+
   const { t } = useTranslation();
 
   return (

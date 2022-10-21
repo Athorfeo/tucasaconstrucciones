@@ -14,6 +14,8 @@ import Footer from '../../../component/footer/Footer';
 import TypeProject from './type/TypeProject';
 import rawData from '../../../res/data/projects.json';
 
+import { getAnalytics, logEvent } from "firebase/analytics";
+
 import './Project.css';
 
 function getProject(projects, id) {
@@ -21,6 +23,9 @@ function getProject(projects, id) {
 }
 
 function Project() {
+  const analytics = getAnalytics();
+  logEvent(analytics, 'page_title', 'Project');
+
   window.scrollTo({top: 0, behavior: 'smooth'});
 
   let { id } = useParams();
