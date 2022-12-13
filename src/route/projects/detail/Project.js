@@ -35,15 +35,40 @@ function Project() {
   const project = getProject(data.projects, id);
 
   //Project Images Section
-  const projectImageList = project.images.map((item) =>
-      <Carousel.Item key={item}>
-        <img 
-          className="d-block w-100" 
-          src={require(`../../../res/image/` + item).default} 
-          alt="One"
-        />
-      </Carousel.Item>
-  );
+  var projectImageList = [];
+  project.images.forEach(item => {
+    switch(item.type) { 
+      case 1: { 
+        projectImageList.push(
+          <Carousel.Item key={item}>
+            <div class="iframe-container">
+              <iframe 
+                class="iframe-responsive" 
+                src="https://www.youtube.com/embed/PBjvYOwjCC8" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </Carousel.Item>
+        );
+        break; 
+      }
+      default: {
+        projectImageList.push(
+          <Carousel.Item key={item}>
+            <img 
+              className="d-block w-100" 
+              src={require(`../../../res/image/` + item.value).default} 
+              alt="One"
+            />
+          </Carousel.Item>
+        );
+        break; 
+      }
+    } 
+  });
 
   //Project Description Section
   var descriptionsSectionView = null;
@@ -146,7 +171,7 @@ function Project() {
 
       </Container>
 
-      <Carousel className="mt-3 mt-md-5">
+      <Carousel interval={null} className="mt-3 mt-md-5">
         {projectImageList}
       </Carousel>
 

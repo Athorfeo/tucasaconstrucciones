@@ -20,9 +20,10 @@
             "deadline":"2022 - 2023",
             "coverImage":"piamonte/img-piamonte-001.jpg",
             "images":[
-                "piamonte/img-piamonte-001.jpg",
-                "piamonte/img-piamonte-002.jpg",
-                "piamonte/img-piamonte-003.jpg"
+                {"type":1, "value":"https://www.youtube.com/embed/PBjvYOwjCC8"},
+                {"type":0, "value":"piamonte/img-piamonte-001.jpg"},
+                {"type":0, "value":"piamonte/img-piamonte-002.jpg"},
+                {"type":0, "value":"piamonte/img-piamonte-003.jpg"}
             ],
             "features":[
                 {
@@ -198,7 +199,7 @@
             "deadline":"2022",
             "coverImage":"gran-reserva-ii/img-gran-reserva-ii-001.jpg",
             "images":[
-                "gran-reserva-ii/img-gran-reserva-ii-001.jpg"
+                {"type":0, "value":"gran-reserva-ii/img-gran-reserva-ii-001.jpg"}
             ],
             "features":[
                 {
@@ -316,7 +317,7 @@
             "deadline":"2021",
             "coverImage":"gran-reserva-i/img-gran-reserva-i-001.jpg",
             "images":[
-                "gran-reserva-i/img-gran-reserva-i-001.jpg"
+                {"type":0, "value":"gran-reserva-i/img-gran-reserva-i-001.jpg"}
             ],
             "features":[
                 {
