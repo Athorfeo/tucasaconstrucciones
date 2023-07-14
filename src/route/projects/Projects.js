@@ -1,7 +1,10 @@
 import Navigation from '../../component/navigation/Navigation';
+import { Link } from 'react-router-dom';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
 
 import ImgProjects from '../../res/image/img-projects.jpg';
 import ItemProject from './item/ItemProjects';
@@ -16,7 +19,10 @@ import { getAnalytics, logEvent } from "firebase/analytics";
 
 function Projects() {
   const analytics = getAnalytics();
-  logEvent(analytics, 'page_title', 'Projects');
+  logEvent(analytics, 'screen_view', {
+    firebase_screen: 'Projects', 
+    firebase_screen_class: 'ProjectsJs'
+  });
 
   const { t } = useTranslation();
 
@@ -30,12 +36,24 @@ function Projects() {
     }, {});
   };
 
+  var getProjectsByStatus = function(data, status) {
+    if(data.hasOwnProperty(status)){
+      return data[status].map((item) =>
+          <ItemProject key={item.id} project={item}></ItemProject>
+      );
+    } else {
+      return <Alert variant="warning" className="mt-2 mt-lg-4">
+      <Alert.Heading>No hay proyectos disponibles!</Alert.Heading>
+        <p>
+          No te procupes, pronto tendremmos mas proyetos disponibles.
+        </p>
+      </Alert>;
+    }
+  };
+
   const projectsByGroup = groupBy(data.projects, 'status');
 
-  const availableProjectsView = projectsByGroup[0].map((item) =>
-      <ItemProject key={item.id} project={item}></ItemProject>
-  );
-
+  const availableProjectsView = getProjectsByStatus(projectsByGroup, 0);
   const soldProjectsView = projectsByGroup[1].map((item) =>
       <ItemProject key={item.id} project={item}></ItemProject>
   );

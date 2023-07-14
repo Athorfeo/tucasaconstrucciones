@@ -24,7 +24,6 @@ function getProject(projects, id) {
 
 function Project() {
   const analytics = getAnalytics();
-  logEvent(analytics, 'page_title', 'Project');
 
   window.scrollTo({top: 0, behavior: 'smooth'});
 
@@ -33,6 +32,12 @@ function Project() {
   const loadedData = JSON.stringify(rawData);
   const data = JSON.parse(loadedData);
   const project = getProject(data.projects, id);
+  
+  const analyticsScreenName = project.name + 'Project';
+  logEvent(analytics, 'screen_view', {
+    firebase_screen: analyticsScreenName, 
+    firebase_screen_class: 'ProjectJs'
+  });
 
   //Project Images Section
   var projectImageList = [];

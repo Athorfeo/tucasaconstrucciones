@@ -16,8 +16,8 @@
                 "No incluidos en el valor: calentador, divisiones de los baños y mueble del lavamanos."
             ],
             "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
-            "status":0,
-            "deadline":"2022 - 2023",
+            "status":1,
+            "deadline":"2023",
             "coverImage":"piamonte/img-piamonte-001.jpg",
             "images":[
                 {"type":1, "value":"https://www.youtube.com/embed/PBjvYOwjCC8"},
@@ -26,10 +26,6 @@
                 {"type":0, "value":"piamonte/img-piamonte-003.jpg"}
             ],
             "features":[
-                {
-                    "name":"project.sale_from",
-                    "value":"$179.000.000"
-                },
                 {
                     "name":"project.number_apartments",
                     "value":"4"
@@ -86,7 +82,7 @@
                     "features":[
                         {
                             "name":"project.status",
-                            "value":0
+                            "value":1
                         },
                         {
                             "name":"project.built_area",
@@ -103,10 +99,6 @@
                         {
                             "name":"project.bathrooms",
                             "value":"3"
-                        },
-                        {
-                            "name":"project.price",
-                            "value":"$198.000.000"
                         }
                     ]
                 },
@@ -160,7 +152,7 @@
                     "features":[
                         {
                             "name":"project.status",
-                            "value":0
+                            "value":1
                         },
                         {
                             "name":"project.built_area",
@@ -177,10 +169,6 @@
                         {
                             "name":"project.bathrooms",
                             "value":"3"
-                        },
-                        {
-                            "name":"project.price",
-                            "value":"$181.000.000"
                         }
                     ]
                 }            

@@ -13,7 +13,10 @@ import { getAnalytics, logEvent } from "firebase/analytics";
 
 function Home() {
   const analytics = getAnalytics();
-  logEvent(analytics, 'page_title', 'Home');
+  logEvent(analytics, 'screen_view', {
+    firebase_screen: 'Home', 
+    firebase_screen_class: 'HomeJs'
+  });
 
   const { t } = useTranslation();
 
