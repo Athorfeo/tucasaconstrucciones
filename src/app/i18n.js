@@ -58,13 +58,30 @@ const resources = {
         },
         "about":{
           "title" : "Nosotros",
-          "subtitle" : "Contáctanos!",
+          "subtitle" : "Conoce más acerca de la constructora!",
+          "contact" : "Contáctanos!",
           "location" : "Ubicación",
           "locationValue" : "Calle 12 #23-12, Ocaña",
           "phone" : "Teléfono",
           "phoneValue" : "+57 316 270 5465",
           "email" : "Email",
-          "emailValue" : "tucasaconstruccionessas@gmail.com"
+          "emailValue" : "tucasaconstruccionessas@gmail.com",
+          "content":{
+            "us": {
+              "title":"Quienes somos",
+              "paragraph-1":"En TuCasa Construcciones, somos más que constructores; somos arquitectos de sueños.",
+              "paragraph-2":"Desde nuestra fundación, nos hemos dedicado a materializar las aspiraciones de las familias, construyendo hogares que reflejen calidad, confort y seguridad."
+            },
+            "mission": {
+              "title":"Misión",
+              "paragraph1":"Nuestra misión es crear espacios habitables que no solo satisfagan las necesidades básicas de las familias, sino que también promuevan un estilo de vida saludable y feliz.",
+              "paragraph2":"Nos esforzamos por superar las expectativas de nuestros clientes, construyendo hogares donde se puedan forjar recuerdos inolvidables y un legado duradero."
+            },
+            "vision": {
+              "title":"Visión",
+              "paragraph":"Nos proyectamos como líderes en el sector de la construcción de viviendas, siendo reconocidos por nuestra constante innovación, compromiso con el medio ambiente y el bienestar integral de todas las partes involucradas en nuestros proyectos."
+            }
+          }
         }
     }
   }

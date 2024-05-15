@@ -62,7 +62,11 @@ function Navigation(props) {
                 <Nav.Link as={Link} to="/projects" replace className="item-navigation">
                   <BsBagFill className="me-2"/>
                   {t('proyects')}
-                  </Nav.Link>
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about" replace className="item-navigation">
+                  <BsInfoSquareFill className="me-2"/>
+                  {t('aboutLabel')}
+                </Nav.Link>
               </Nav>
 
               <h4 className="text-center mt-5">{t('follow_us')}</h4>

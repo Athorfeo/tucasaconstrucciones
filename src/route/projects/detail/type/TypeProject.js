@@ -24,7 +24,7 @@ function TypeProject(props) {
       <Carousel.Item key={image}>
         <img 
           className="d-block w-100" 
-          src={require(`../../../../res/image/` + image).default} 
+          src={require(`../../../../res/image/` + image)} 
           alt="One"
         />
       </Carousel.Item>
@@ -33,7 +33,7 @@ function TypeProject(props) {
 
   if(props.type.pdf != null){
     downloadLayoutView = (
-      <a href={require(`../../../../res/pdf/` + props.type.pdf).default} target="_blank" rel="noreferrer" className="d-flex align-items-center p-3 text-dark text-decoration-none border border-dark button-typology-project">
+      <a href={require(`../../../../res/pdf/` + props.type.pdf)} target="_blank" rel="noreferrer" className="d-flex align-items-center p-3 text-dark text-decoration-none border border-dark button-typology-project">
         <div className="flex-fill fw-bold text-uppercase text-center">
           {t('project.download_layout')}
         </div>

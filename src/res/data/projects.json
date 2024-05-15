@@ -1,6 +1,421 @@
 {
     "projects":[
         {
+            "id":"entre-verde-i",
+            "name":"Entre Verde",
+            "category":"Multifamiliar",
+            "location":"Urbanización La Provenza",
+            "city":"Ocaña, Norte de Santander",
+            "descriptions":[
+                "¡Descubre Entre Verde Multifamiliar, tu nuevo hogar en la urbanización Provenza!",
+                "Con una ubicación estratégica cerca de colegios, el hospital y las arterias viales de la ciudad, este proyecto te ofrece la oportunidad de vivir en un ambiente tranquilo y de gran valorización.",
+                "El proyecto cuenta con un total de 8 unidades de vivienda que se desarrollarán en dos etapas y variedad de tipologías, incluida una opción que califica para compra con el subsidio de MiCasaYA.",
+                "Todas las viviendas se entregan en obra gris habitable, permitiéndote personalizar tu nuevo hogar según tus gustos y necesidades.",
+                "¡Ven y descubre la vida que siempre has soñado en Entre Verde Multifamiliar!"
+            ],
+            "description":"Piamonte II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
+            "status":0,
+            "deadline":"2024-2025",
+            "coverImage":"piamonte-ii/img-piamonte-ii-001.jpg",
+            "images":[
+                {"type":0, "value":"entre-verde-i/entre-verde-i-001.jpg"},
+                {"type":0, "value":"entre-verde-i/entre-verde-i-002.jpg"},
+                {"type":0, "value":"entre-verde-i/entre-verde-i-003.jpg"},
+                {"type":0, "value":"entre-verde-i/entre-verde-i-004.jpg"},
+                {"type":0, "value":"entre-verde-i/entre-verde-i-005.jpg"}
+            ],
+            "features":[
+                {
+                    "name":"project.number_apartments",
+                    "value":"8"
+                }
+            ],
+            "types":[
+                {
+                    "name":"Tipología A",
+                    "pdf":"entre-verde-i/entre-verde-i-typology-a.pdf",
+                    "descriptions": [
+                        "En la vivienda encontrarás:",
+                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
+                        "Segundo piso: Tres alcobas y dos baños."
+                    ],
+                    "images":[
+                        "entre-verde-i/entre-verde-i-typology-a-001.jpg",
+                        "entre-verde-i/entre-verde-i-typology-a-002.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":0
+                        },
+                        {
+                            "name":"project.sale_from",
+                            "value":"135 SMMLV año 2025"
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"87.11"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"78.05"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.garage_seat",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.dining_room",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"1"
+                        }
+                    ]
+                },
+                {
+                    "name":"Tipología B",
+                    "pdf":"entre-verde-i/entre-verde-i-typology-b.pdf",
+                    "descriptions": [
+                        "En la vivienda encontrarás:",
+                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
+                        "Segundo piso: Tres alcobas con balcón y dos baños.",
+                        "Opcional: Primer piso tercer baño o Estar tv."
+                    ],
+                    "images":[
+                        "entre-verde-i/entre-verde-i-typology-b-001.jpg",
+                        "entre-verde-i/entre-verde-i-typology-b-002.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":0
+                        },
+                        {
+                            "name":"project.sale_from",
+                            "value":"$218,571,855"
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"100.01"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"90.85"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.garage_seat",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.dining_room",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"1"
+                        }
+                    ]
+                },
+                {
+                    "name":"Tipología C",
+                    "pdf":"entre-verde-i/entre-verde-i-typology-c.pdf",
+                    "descriptions": [
+                        "En la vivienda encontrarás:",
+                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
+                        "Segundo piso: Tres alcobas con balcón y dos baños.",
+                        "Opcional: Primer piso tercer baño o Estar tv."
+                    ],
+                    "images":[
+                        "entre-verde-i/entre-verde-i-typology-c-001.jpg",
+                        "entre-verde-i/entre-verde-i-typology-c-002.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":0
+                        },
+                        {
+                            "name":"project.sale_from",
+                            "value":"$198,006,300"
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"90.6"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"81.84"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.garage_seat",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.dining_room",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"1"
+                        }
+                    ]
+                },
+                {
+                    "name":"Tipología D",
+                    "pdf":"entre-verde-i/entre-verde-i-typology-d.pdf",
+                    "descriptions": [
+                        "En la vivienda encontrarás:",
+                        "Primer piso: Sala comedor, cocina y zona de ropas.",
+                        "Segundo piso: Tres alcobas y dos baños.",
+                        "Zona Externa: Parqueadero y Hall de acceso."
+                    ],
+                    "images":[
+                        "entre-verde-i/entre-verde-i-typology-d-001.jpg",
+                        "entre-verde-i/entre-verde-i-typology-d-002.jpg",
+                        "entre-verde-i/entre-verde-i-typology-d-003.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":1
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"118.13"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"106.84"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.garage_seat",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.dining_room",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"1"
+                        }
+                    ]
+                },
+                {
+                    "name":"Tipología E",
+                    "pdf":"entre-verde-i/entre-verde-i-typology-e.pdf",
+                    "descriptions": [
+                        "En la vivienda encontrarás:",
+                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
+                        "Segundo piso: Tres alcobas y dos baños."
+                    ],
+                    "images":[
+                        "entre-verde-i/entre-verde-i-typology-e-001.jpg",
+                        "entre-verde-i/entre-verde-i-typology-e-002.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":0
+                        },
+                        {
+                            "name":"project.sale_from",
+                            "value":"135 SMMLV año 2025"
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"87.11"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"77.83"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"3"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.garage_seat",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.dining_room",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.kitchen",
+                            "value":"1"
+                        },
+                        {
+                            "name":"project.clothes_zone",
+                            "value":"1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":"piamonte-ii",
+            "name":"Piamonte II",
+            "category":"Multifamiliar",
+            "location":"Urbanización La Provenza",
+            "city":"Ocaña, Norte de Santander",
+            "descriptions":[
+                "¡Bienvenido a Piamonte Multifamiliar II, viviendas exclusivas en medio de la naturaleza y la tranquilidad!",
+                "Imagina vivir en un espacio lleno de luz natural gracias a su impresionante fachada doble que inunda cada rincón de tu hogar con vitalidad y frescura.",
+                "Nuestra forma de pago:",
+                "- Leasing Habitacional: Obtenga hasta un 80% de financiación con un crédito bancario.",
+                "- Crédito Hipotecario: Acceder a un 70% de financiación a través de entidades bancarias de renombre.",
+                "En ambos casos, la diferencia para completar el 100% de tu vivienda la podrás abonar cómodamente durante la etapa de construcción.",
+                "No te preocupes por estos detalles, pero ten en cuenta que el calentador y las divisiones de baño no están incluidos en el valor."
+            ],
+            "description":"Piamonte II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
+            "status":1,
+            "deadline":"2023",
+            "coverImage":"piamonte-ii/img-piamonte-ii-001.jpg",
+            "images":[
+                {"type":1, "value":"https://www.youtube.com/embed/asaVfONuq6k"},
+                {"type":0, "value":"piamonte-ii/img-piamonte-ii-001.jpg"},
+                {"type":0, "value":"piamonte-ii/img-piamonte-ii-002.jpg"},
+                {"type":0, "value":"piamonte-ii/img-piamonte-ii-003.jpg"},
+                {"type":0, "value":"piamonte-ii/img-piamonte-ii-004.jpg"}
+            ],
+            "features":[
+                {
+                    "name":"project.number_apartments",
+                    "value":"2"
+                }
+            ],
+            "types":[
+                {
+                    "name":"101",
+                    "pdf":"piamonte-ii/piamonte-ii-101.pdf",
+                    "descriptions": [
+                        "Esta impresionante tipología de vivienda cuenta con un primer piso que incluye un garaje y zona de ropas. En la segunda planta, descubrirás dos acogedoras alcobas con closets, un baño auxiliar, una luminosa sala-comedor, una cocina de estilo americano y, por supuesto, la habitación principal con su propio baño privado.",
+                        "¡Ven y experimenta la vida de tus sueños en Piamonte Multifamiliar II!"
+                    ],
+                    "images":[
+                        "piamonte-ii/img-piamonte-ii-101-001.jpg",
+                        "piamonte-ii/img-piamonte-ii-101-002.jpg",
+                        "piamonte-ii/img-piamonte-ii-101-003.jpg",
+                        "piamonte-ii/img-piamonte-ii-101-004.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":1
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"61.10"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"55.02"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        }
+                    ]
+                },
+                {
+                    "name":"102",
+                    "pdf":"piamonte-ii/piamonte-ii-102.pdf",
+                    "descriptions": [
+                        "Esta impresionante tipología de vivienda cuenta con un primer piso que incluye un garaje y zona de ropas. En la segunda planta, descubrirás dos acogedoras alcobas con closets, un baño auxiliar, una luminosa sala-comedor, una cocina de estilo americano y, por supuesto, la habitación principal con su propio baño privado.",
+                        "¡Ven y experimenta la vida de tus sueños en Piamonte Multifamiliar II!"                    ],
+                    "images":[
+                        "piamonte-ii/img-piamonte-ii-102-001.jpg",
+                        "piamonte-ii/img-piamonte-ii-102-002.jpg",
+                        "piamonte-ii/img-piamonte-ii-102-003.jpg",
+                        "piamonte-ii/img-piamonte-ii-102-004.jpg",
+                        "piamonte-ii/img-piamonte-ii-102-005.jpg"
+                    ],
+                    "features":[
+                        {
+                            "name":"project.status",
+                            "value":1
+                        },
+                        {
+                            "name":"project.built_area",
+                            "value":"63.73"
+                        },
+                        {
+                            "name":"project.free_area",
+                            "value":"57.97"
+                        },
+                        {
+                            "name":"project.rooms",
+                            "value":"2"
+                        },
+                        {
+                            "name":"project.bathrooms",
+                            "value":"2"
+                        }
+                    ]
+                }          
+            ]
+        },
+        {
             "id":"piamonte",
             "name":"Piamonte",
             "category":"Multifamiliar",

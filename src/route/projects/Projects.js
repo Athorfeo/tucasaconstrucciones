@@ -43,9 +43,9 @@ function Projects() {
       );
     } else {
       return <Alert variant="warning" className="mt-2 mt-lg-4">
-      <Alert.Heading>No hay proyectos disponibles!</Alert.Heading>
+      <Alert.Heading>¡Pronto tendremos más proyectos disponibles!</Alert.Heading>
         <p>
-          No te procupes, pronto tendremmos mas proyetos disponibles.
+          Te invitamos a seguirnos en nuestras redes sociales, ahí podrás enterarte cuando haya un nuevo proyecto disponible.
         </p>
       </Alert>;
     }

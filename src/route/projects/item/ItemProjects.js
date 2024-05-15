@@ -18,12 +18,15 @@ function ItemProjects(props) {
       <FeatureItemProjects key={item.name} feature={{name: t(item.name), value: item.value}} />
   );
 
+  const imageRoute = '../../../res/image/' + props.project.coverImage;
+  console.log("ImageRoute: " + imageRoute)
+
   return (
     <Col lg={6} className="mt-5 p-0">
       <Link to={props.project.id} className="item-project">
 
         <div className="position-relative item-project-header ms-1">
-          <img src={require(`../../../res/image/` + props.project.coverImage).default} className="w-100 h-100" alt="ImgHomeHouse" />
+          <img src={require('../../../res/image/' + props.project.coverImage)} className="w-100 h-100" alt="ImgHomeHouse" />
 
           <div className="d-flex position-absolute fixed-top align-items-end h-100">
             <div className="w-100 p-sm-5 p-3 bg-dark bg-opacity-25">

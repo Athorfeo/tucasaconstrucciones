@@ -49,7 +49,7 @@ function Project() {
             <div class="iframe-container">
               <iframe 
                 class="iframe-responsive" 
-                src="https://www.youtube.com/embed/PBjvYOwjCC8" 
+                src={item.value} 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -65,7 +65,7 @@ function Project() {
           <Carousel.Item key={item}>
             <img 
               className="d-block w-100" 
-              src={require(`../../../res/image/` + item.value).default} 
+              src={require(`../../../res/image/` + item.value)} 
               alt="One"
             />
           </Carousel.Item>
