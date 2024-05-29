@@ -13,11 +13,12 @@
                 "Todas las viviendas se entregan en obra gris habitable, permitiéndote personalizar tu nuevo hogar según tus gustos y necesidades.",
                 "¡Ven y descubre la vida que siempre has soñado en Entre Verde Multifamiliar!"
             ],
-            "description":"Piamonte II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
+            "description":"Entre Verde, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con cinco tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
             "status":0,
             "deadline":"2024-2025",
-            "coverImage":"piamonte-ii/img-piamonte-ii-001.jpg",
+            "coverImage":"entre-verde-i/entre-verde-i-001.jpg",
             "images":[
+                {"type":1, "value":"https://www.youtube.com/embed/D_y9j8QIA2A?si=fDRLhOusVaL4D4cP"},
                 {"type":0, "value":"entre-verde-i/entre-verde-i-001.jpg"},
                 {"type":0, "value":"entre-verde-i/entre-verde-i-002.jpg"},
                 {"type":0, "value":"entre-verde-i/entre-verde-i-003.jpg"},
@@ -32,12 +33,11 @@
             ],
             "types":[
                 {
-                    "name":"Tipología A",
+                    "name":"Tipo A",
                     "pdf":"entre-verde-i/entre-verde-i-typology-a.pdf",
                     "descriptions": [
-                        "En la vivienda encontrarás:",
-                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
-                        "Segundo piso: Tres alcobas y dos baños."
+                        "Esta tipología cuenta en el primer piso con la sala comedor, cocina, zona de ropas y parqueadero.",
+                        "En la segunda planta encontraremos dos alcobas auxiliares, un baño auxiliar y la habitación principal que incluye balcón, espacio para vestier y baño privado."
                     ],
                     "images":[
                         "entre-verde-i/entre-verde-i-typology-a-001.jpg",
@@ -49,7 +49,7 @@
                             "value":0
                         },
                         {
-                            "name":"project.sale_from",
+                            "name":"project.price",
                             "value":"135 SMMLV año 2025"
                         },
                         {
@@ -67,33 +67,16 @@
                         {
                             "name":"project.bathrooms",
                             "value":"2"
-                        },
-                        {
-                            "name":"project.garage_seat",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.dining_room",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.kitchen",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.clothes_zone",
-                            "value":"1"
                         }
                     ]
                 },
                 {
-                    "name":"Tipología B",
+                    "name":"Tipo B",
                     "pdf":"entre-verde-i/entre-verde-i-typology-b.pdf",
                     "descriptions": [
-                        "En la vivienda encontrarás:",
-                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
-                        "Segundo piso: Tres alcobas con balcón y dos baños.",
-                        "Opcional: Primer piso tercer baño o Estar tv."
+                        "Esta tipología al ser esquinera cuenta con doble fachada y el mejor aprovechamiento de la ventilación y la iluminación natural.",
+                        "En el primer piso encontraremos la sala comedor, cocina, zona de ropas y parqueadero. Adicionalmente, junto a la escalera hay un espacio que se podrá aprovechar como sala de estar/TV o como baño social, según su preferencia.",
+                        "En la segunda planta se encontrarán dos alcobas auxiliares con balcón, un baño auxiliar y la habitación principal que incluye balcón, espacio para vestier y baño privado."
                     ],
                     "images":[
                         "entre-verde-i/entre-verde-i-typology-b-001.jpg",
@@ -102,11 +85,7 @@
                     "features":[
                         {
                             "name":"project.status",
-                            "value":0
-                        },
-                        {
-                            "name":"project.sale_from",
-                            "value":"$218,571,855"
+                            "value":1
                         },
                         {
                             "name":"project.built_area",
@@ -123,33 +102,16 @@
                         {
                             "name":"project.bathrooms",
                             "value":"2"
-                        },
-                        {
-                            "name":"project.garage_seat",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.dining_room",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.kitchen",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.clothes_zone",
-                            "value":"1"
                         }
                     ]
                 },
                 {
-                    "name":"Tipología C",
+                    "name":"Tipo C",
                     "pdf":"entre-verde-i/entre-verde-i-typology-c.pdf",
                     "descriptions": [
-                        "En la vivienda encontrarás:",
-                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
-                        "Segundo piso: Tres alcobas con balcón y dos baños.",
-                        "Opcional: Primer piso tercer baño o Estar tv."
+                        "Esta tipología al ser esquinera cuenta con doble fachada y el mejor aprovechamiento de la ventilación y la iluminación natural.",
+                        "En el primer piso encontraremos la sala comedor, cocina, zona de ropas y parqueadero. Adicionalmente, junto a la escalera hay un espacio que se podrá aprovechar como sala de estar/TV o como baño social, según su preferencia.",
+                        "En la segunda planta se encontrarán dos alcobas auxiliares con balcón, un baño auxiliar y la habitación principal que incluye balcón, espacio para vestier y baño privado."
                     ],
                     "images":[
                         "entre-verde-i/entre-verde-i-typology-c-001.jpg",
@@ -158,11 +120,7 @@
                     "features":[
                         {
                             "name":"project.status",
-                            "value":0
-                        },
-                        {
-                            "name":"project.sale_from",
-                            "value":"$198,006,300"
+                            "value":1
                         },
                         {
                             "name":"project.built_area",
@@ -179,33 +137,15 @@
                         {
                             "name":"project.bathrooms",
                             "value":"2"
-                        },
-                        {
-                            "name":"project.garage_seat",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.dining_room",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.kitchen",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.clothes_zone",
-                            "value":"1"
                         }
                     ]
                 },
                 {
-                    "name":"Tipología D",
+                    "name":"Tipo D",
                     "pdf":"entre-verde-i/entre-verde-i-typology-d.pdf",
                     "descriptions": [
-                        "En la vivienda encontrarás:",
-                        "Primer piso: Sala comedor, cocina y zona de ropas.",
-                        "Segundo piso: Tres alcobas y dos baños.",
-                        "Zona Externa: Parqueadero y Hall de acceso."
+                        "Esta tipología cuenta en el primer piso con la sala comedor, cocina, baño social, zona de ropas y doble parqueadero externo.",
+                        "En la segunda planta encontraremos dos alcobas auxiliares, un baño auxiliar y la habitación principal que incluye balcón, espacio para vestier y baño privado."
                     ],
                     "images":[
                         "entre-verde-i/entre-verde-i-typology-d-001.jpg",
@@ -232,32 +172,15 @@
                         {
                             "name":"project.bathrooms",
                             "value":"2"
-                        },
-                        {
-                            "name":"project.garage_seat",
-                            "value":"2"
-                        },
-                        {
-                            "name":"project.dining_room",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.kitchen",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.clothes_zone",
-                            "value":"1"
                         }
                     ]
                 },
                 {
-                    "name":"Tipología E",
+                    "name":"Tipo E",
                     "pdf":"entre-verde-i/entre-verde-i-typology-e.pdf",
                     "descriptions": [
-                        "En la vivienda encontrarás:",
-                        "Primer piso: Sala comedor, cocina, parqueadero y zona de ropas.",
-                        "Segundo piso: Tres alcobas y dos baños."
+                        "Esta tipología cuenta en el primer piso con la sala comedor, cocina, zona de ropas y parqueadero.",
+                        "En la segunda planta encontraremos dos alcobas auxiliares, un baño auxiliar y la habitación principal que incluye balcón, espacio para vestier y baño privado."
                     ],
                     "images":[
                         "entre-verde-i/entre-verde-i-typology-e-001.jpg",
@@ -266,11 +189,7 @@
                     "features":[
                         {
                             "name":"project.status",
-                            "value":0
-                        },
-                        {
-                            "name":"project.sale_from",
-                            "value":"135 SMMLV año 2025"
+                            "value":1
                         },
                         {
                             "name":"project.built_area",
@@ -287,22 +206,6 @@
                         {
                             "name":"project.bathrooms",
                             "value":"2"
-                        },
-                        {
-                            "name":"project.garage_seat",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.dining_room",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.kitchen",
-                            "value":"1"
-                        },
-                        {
-                            "name":"project.clothes_zone",
-                            "value":"1"
                         }
                     ]
                 }

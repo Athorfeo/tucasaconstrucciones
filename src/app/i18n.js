@@ -33,6 +33,7 @@ const resources = {
             "initial_price": "Cuota Inicial",
             "credit": "Valor restante / crédito",
             "sale_from": "Desde",
+            "price": "Precio",
             "number_apartments":"Número de viviendas",
             "location":"Locación",
             "deadline":"Año de entrega",

@@ -51,7 +51,7 @@ function TypeProject(props) {
         if(feature.value > 0){
           value = <span className="text-danger">{statusText}</span>;
         } else {
-          value = statusText;
+          value =  <span className="text-success">{statusText}</span>;
         }
 
         break;
