@@ -69,7 +69,7 @@ function Navigation(props) {
                 </Nav.Link>
               </Nav>
 
-              <h4 className="text-center mt-5">{t('follow_us')}</h4>
+              <div className="fs-3 text-center mt-5">{t('follow_us')}</div>
               <div className="d-flex justify-content-center">
                 <a href="https://www.facebook.com/TUCASA-CONSTRUCCIONES-105314684770792/" target="_blank" rel="noreferrer"  className="text-dark"><FiFacebook className="me-2" size={30}/></a>
                 <a href="https://www.instagram.com/tucasa_construcciones/" target="_blank" rel="noreferrer"  className="text-dark"><FiInstagram className="me-2" size={30}/></a>
