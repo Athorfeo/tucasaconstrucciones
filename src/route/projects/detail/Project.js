@@ -15,8 +15,10 @@ import TypeProject from './type/TypeProject';
 import rawData from '../../../res/data/projects.json';
 
 import { getAnalytics, logEvent } from "firebase/analytics";
+import {APIProvider, Map, AdvancedMarker, Pin} from '@vis.gl/react-google-maps';
 
 import './Project.css';
+import { useEffect } from 'react';
 
 function getProject(projects, id) {
   return projects.find(item => item.id === id);
@@ -25,7 +27,11 @@ function getProject(projects, id) {
 function Project() {
   const analytics = getAnalytics();
 
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }, []);
+
+  //window.scrollTo({top: 0, behavior: 'smooth'});
 
   let { id } = useParams();
   const { t } = useTranslation();
@@ -41,19 +47,20 @@ function Project() {
 
   //Project Images Section
   var projectImageList = [];
-  project.images.forEach(item => {
+  project.images.forEach((item, index) => {
+    let itemKey = `project-image-item-${index}`
     switch(item.type) { 
       case 1: { 
         projectImageList.push(
-          <Carousel.Item key={item}>
-            <div class="iframe-container">
+          <Carousel.Item key={itemKey}>
+            <div className="iframe-container">
               <iframe 
-                class="iframe-responsive" 
+                className="iframe-responsive" 
                 src={item.value} 
                 title="YouTube video player" 
-                frameborder="0" 
+                border="0px" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
+                allowFullScreen>
               </iframe>
             </div>
           </Carousel.Item>
@@ -62,7 +69,7 @@ function Project() {
       }
       default: {
         projectImageList.push(
-          <Carousel.Item key={item}>
+          <Carousel.Item key={itemKey}>
             <img 
               className="d-block w-100" 
               src={require(`../../../res/image/` + item.value)} 
@@ -79,8 +86,8 @@ function Project() {
   var descriptionsSectionView = null;
   if(project.types.length > 0) {
 
-    var descriptionsView = project.descriptions.map((description) => {
-      return <p>{description}</p>;
+    var descriptionsView = project.descriptions.map((description, index) => {
+      return <p key={`project-description-item-${index}`}>{description}</p>;
     });
 
     descriptionsSectionView = (
@@ -103,8 +110,8 @@ function Project() {
   var tipologiesSectionView = null;
 
   if(project.types.length > 0) {
-    const tipologyListView = project.types.map((item) => 
-      <Tab key={item.name} eventKey={item.name} title={t('project.type') + ` ` + item.name}>
+    const tipologyListView = project.types.map((item, index) => 
+      <Tab key={`project-tipology-item-${index}`} eventKey={item.name} title={t('project.type') + ` ` + item.name}>
         <TypeProject type={item} />
       </Tab>
     );
@@ -121,6 +128,8 @@ function Project() {
             {tipologyListView}
           </Tabs>
         </Row>
+
+        <hr className='mt-5'></hr>
       </Container>;
   }
 
@@ -138,6 +147,33 @@ function Project() {
         </Link>
       </Alert>;
   }
+
+  //Project | Location Maps Section
+  var locationMapsSectionView = null;
+  locationMapsSectionView = (
+    <Container>
+      <Row className='mt-5'>
+        <Col>
+          <h2 className="display-3 mb-5">{t('project.locationMaps')}</h2>
+        </Col>
+      </Row>
+      <Row>
+        <APIProvider apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} onLoad={() => console.log('Maps API has loaded.')}>
+          <Map
+            style={{width: '100%', height: '400px'}}
+            defaultCenter={{lat: project.locationMaps.latitude, lng: project.locationMaps.longitude}}
+            defaultZoom={18}
+            gestureHandling={'greedy'}
+            disableDefaultUI={true}
+            mapId="f7f9a973b8ff606e"
+            >
+              <AdvancedMarker position={{lat: project.locationMaps.latitude, lng: project.locationMaps.longitude}}>
+              </AdvancedMarker>
+          </Map>
+        </APIProvider>
+      </Row>
+    </Container>
+  );
 
   return (
     <div>
@@ -184,6 +220,8 @@ function Project() {
 
       {tipologiesSectionView}
 
+      {locationMapsSectionView}
+
       <Container fluid className='theme-bg-white-secondary mt-5'>
         <Container className='d-flex flex-column pt-5 pb-5'>
           <h2 className="display-5">{t('project.contact')}</h2>
@@ -227,7 +265,6 @@ function Project() {
           </Row>
         </Container>
       </Container>
-
       <Footer />
     </div>
   );

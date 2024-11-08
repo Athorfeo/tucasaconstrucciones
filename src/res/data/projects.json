@@ -16,6 +16,10 @@
             "description":"Entre Verde, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con cinco tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
             "status":0,
             "deadline":"2024-2025",
+            "locationMaps":{
+                "latitude": 8.257385889106935,
+                "longitude": -73.3544188690128
+            },
             "coverImage":"entre-verde-i/entre-verde-i-001.jpg",
             "images":[
                 {"type":1, "value":"https://www.youtube.com/embed/wK9b5GevChM?si=JT83olJVHbsYxWxI"},
@@ -229,6 +233,10 @@
             "description":"Piamonte II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
             "status":1,
             "deadline":"2023",
+            "locationMaps":{
+                "latitude": 8.257362, 
+                "longitude": -73.354384
+            },
             "coverImage":"piamonte-ii/img-piamonte-ii-001.jpg",
             "images":[
                 {"type":1, "value":"https://www.youtube.com/embed/asaVfONuq6k"},
@@ -336,6 +344,10 @@
             "description":"Gran Reserva II, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con tres tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
             "status":1,
             "deadline":"2023",
+            "locationMaps":{
+                "latitude": 8.257362, 
+                "longitude": -73.354384
+            },
             "coverImage":"piamonte/img-piamonte-001.jpg",
             "images":[
                 {"type":1, "value":"https://www.youtube.com/embed/PBjvYOwjCC8"},
@@ -503,6 +515,10 @@
             ],
             "status":1,
             "deadline":"2022",
+            "locationMaps":{
+                "latitude": 8.257362, 
+                "longitude": -73.354384
+            },
             "coverImage":"gran-reserva-ii/img-gran-reserva-ii-001.jpg",
             "images":[
                 {"type":0, "value":"gran-reserva-ii/img-gran-reserva-ii-001.jpg"}
@@ -621,6 +637,10 @@
             "descriptions": [],
             "status":1,
             "deadline":"2021",
+            "locationMaps":{
+                "latitude": 8.257362, 
+                "longitude": -73.354384
+            },
             "coverImage":"gran-reserva-i/img-gran-reserva-i-001.jpg",
             "images":[
                 {"type":0, "value":"gran-reserva-i/img-gran-reserva-i-001.jpg"}
