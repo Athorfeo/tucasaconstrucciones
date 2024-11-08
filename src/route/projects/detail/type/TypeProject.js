@@ -15,13 +15,13 @@ function TypeProject(props) {
   const featuresView = [];
   var downloadLayoutView = null;
 
-  props.type.descriptions.forEach(description => {
-    descriptionsView.push(<p>{description}</p>);
+  props.type.descriptions.forEach((description, index) => {
+    descriptionsView.push(<p key={`project-type-project-description-item-${index}`}>{description}</p>);
   });
 
-  props.type.images.forEach(image => {
+  props.type.images.forEach((image, index) => {
     imagesView.push(
-      <Carousel.Item key={image}>
+      <Carousel.Item key={`project-type-project-image-item-${index}`}>
         <img 
           className="d-block w-100" 
           src={require(`../../../../res/image/` + image)} 
@@ -73,14 +73,14 @@ function TypeProject(props) {
 
     if((index % 2) === 0){
       featuresView.push(
-        <Col sm={6} className="d-flex align-items-center p-4 border-dark border-bottom border-end">
+        <Col key={`project-type-project-item-${index}`} sm={6} className="d-flex align-items-center p-4 border-dark border-bottom border-end">
           {nameView}
           {valueView}
         </Col>
       );
     } else {
       featuresView.push(
-        <Col sm={6} className="d-flex align-items-center p-4 border-dark border-bottom">
+        <Col key={`project-type-project-item-${index}`} sm={6} className="d-flex align-items-center p-4 border-dark border-bottom">
           {nameView}
           {valueView}
         </Col>

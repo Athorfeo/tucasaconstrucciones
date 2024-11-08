@@ -36,6 +36,7 @@ const resources = {
             "price": "Precio",
             "number_apartments":"Número de viviendas",
             "location":"Locación",
+            "locationMaps":"Ubicación",
             "deadline":"Año de entrega",
             "type_apartments":"Tipologías",
             "type":"Vivienda",
