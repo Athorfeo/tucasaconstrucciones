@@ -14,7 +14,7 @@
                 "¡Ven y descubre la vida que siempre has soñado en Entre Verde Multifamiliar!"
             ],
             "description":"Entre Verde, es un proyecto con diseño innovador, ubicado en una zona de alta valorización, con excelentes vías de acceso, planeado pensando en ti y tu familia. Cuenta con cinco tipos de vivienda los cuales te permitirán escojer la opción que mejor se adapte a tus necesidades.",
-            "status":0,
+            "status":1,
             "deadline":"2024-2025",
             "locationMaps":{
                 "latitude": 8.257385889106935,
@@ -50,11 +50,11 @@
                     "features":[
                         {
                             "name":"project.status",
-                            "value":0
+                            "value":1
                         },
                         {
                             "name":"project.price",
-                            "value":"135 SMMLV año 2025"
+                            "value":"$192.172.000"
                         },
                         {
                             "name":"project.built_area",

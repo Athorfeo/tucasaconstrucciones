@@ -7,7 +7,7 @@ const resources = {
         "last_proyect": "Piamonte",
 
         "address_value": "Calle 12 #23-12, Ocaña",
-        "phone_value": "+57 316 270 5465",
+        "phone_value": "+57 316 471 7853",
         "instagram_value": "@tucasa_construcciones",
 
         "slogan": "¡Construimos sueños!",
@@ -65,7 +65,7 @@ const resources = {
           "location" : "Ubicación",
           "locationValue" : "Calle 12 #23-12, Ocaña",
           "phone" : "Teléfono",
-          "phoneValue" : "+57 316 270 5465",
+          "phoneValue" : "+57 316 471 7853",
           "email" : "Email",
           "emailValue" : "tucasaconstruccionessas@gmail.com",
           "content":{
