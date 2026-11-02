@@ -17,6 +17,7 @@ import Home from './route/home/Home';
 import Projects from './route/projects/Projects';
 import Project from './route/projects/detail/Project';
 import About from './route/about/About';
+import SST from './route/sst/SST';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -29,6 +30,7 @@ ReactDOM.render(
           <Route path="projects" element={<Projects />} />
           <Route path="projects/:id" element={<Project />} />
           <Route path="about" element={<About />} />
+          <Route path="sst" element={<SST />} />
           <Route
             path="*"
             element={

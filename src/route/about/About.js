@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 
@@ -9,7 +11,19 @@ import Footer from '../../component/footer/Footer';
 import rawData from '../../res/data/projects.json';
 import ImgProjects from '../../res/image/img-projects.jpg';
 
-import { BsHouseFill, BsBagFill, BsInfoSquareFill, BsBullseye, BsAwardFill, BsBarChartFill, BsBarChartSteps, BsBoxes, BsInfoCircle } from "react-icons/bs";
+import { 
+  BsHouseFill, 
+  BsBagFill, 
+  BsInfoSquareFill, 
+  BsBullseye, 
+  BsAwardFill, 
+  BsBarChartFill, 
+  BsBarChartSteps, 
+  BsBoxes, 
+  BsInfoCircle,
+  BsShieldCheck,
+  BsArrowRight
+} from "react-icons/bs";
 
 function About() {
   const { t } = useTranslation();
@@ -69,6 +83,35 @@ function About() {
           </Col>
           <Col lg={6}>
             <p>{t('about.content.vision.paragraph')}</p>
+          </Col>
+        </Row>
+
+        <hr className='mt-5'></hr>
+
+        <Row className="mt-5">
+          <Col lg={6}>
+            <h2 className="display-5 mb-3">
+              <BsShieldCheck className="me-4 text-danger"/>
+              {t('about.content.sst.title')}
+            </h2>
+            <p className="text-muted fs-6 mb-4">
+              {t('about.content.sst.subtitle')}
+            </p>
+          </Col>
+          <Col lg={6}>
+            <p>{t('about.content.sst.paragraph1')}</p>
+            <p>{t('about.content.sst.paragraph2')}</p>
+            <div className="mt-4">
+              <Button
+                as={Link}
+                to="/sst"
+                variant="outline-danger"
+                className="d-inline-flex align-items-center"
+              >
+                {t('about.content.sst.cta')}
+                <BsArrowRight className="ms-2" />
+              </Button>
+            </div>
           </Col>
         </Row>
       </Container>

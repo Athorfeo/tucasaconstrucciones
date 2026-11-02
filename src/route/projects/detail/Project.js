@@ -111,7 +111,7 @@ function Project() {
 
   if(project.types.length > 0) {
     const tipologyListView = project.types.map((item, index) => 
-      <Tab key={`project-tipology-item-${index}`} eventKey={item.name} title={t('project.type') + ` ` + item.name}>
+      <Tab key={`project-tipology-item-${index}`} eventKey={item.name} title={item.name}>
         <TypeProject type={item} />
       </Tab>
     );
